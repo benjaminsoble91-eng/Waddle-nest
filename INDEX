@@ -39,6 +39,7 @@ libepoxy|1.5.10-1|glibc,libx11,libglvnd|eggs/libepoxy-1.5.10-1.egg|b6a3be8c391c9
 libevdev|1.13.1-1|glibc|eggs/libevdev-1.13.1-1.egg|a051d0e9595cde966f71677b13505c0d43c7554c895cc0c71e9bde935ad176e4|47962|Input device library (libevdev)
 libffi|3.4.6-1|glibc|eggs/libffi-3.4.6-1.egg|ede14fd34dea60acc4ac495ad557395137cf203ec7703e622a84e7df088ed18d|22351|Library for calling functions dynamically (libffi)
 libglvnd|1.7.0-1|glibc,libx11,libxext|eggs/libglvnd-1.7.0-1.egg|72655d37f7a9c034d050021f5054bf681cd93d8c6a64f827001f3b357eb0ad8e|358494|OpenGL/EGL dispatch libraries and headers (libglvnd; apps fall back to CPU drawing without a GPU driver)
+libimobiledevice|1.3.0-1|glibc|eggs/libimobiledevice-1.3.0-1.egg|9548c86f049382668e4f4380706ac0eba88be76580ac1b0ef8a657c32d20ce15|2627389|Tools to talk to iPhones/iPads over USB (ideviceinfo, iproxy...)
 libinput|1.25.0-1|glibc,libevdev,mtdev,libudev-zero|eggs/libinput-1.25.0-1.egg|0cf0225c3b914a912586d642ec299fe0a6d6d2a22c19ed5c8081628dceaa120a|445864|Mouse, keyboard and touchpad handling (libinput)
 libplacebo|6.338.2-1|glibc|eggs/libplacebo-6.338.2-1.egg|66e438dc847007759fe83eeda0ebd85858f49d1df9cda2704a5d486f550dc44f|284143|Video rendering helpers (libplacebo)
 libpng|1.6.43-1|glibc,zlib|eggs/libpng-1.6.43-1.egg|a8eac90445a1e305208946d582c00180ef1d8ddbd04c691d3d3b55370b1507d5|134347|PNG image library
@@ -71,10 +72,12 @@ pixman|0.42.2-1|glibc|eggs/pixman-0.42.2-1.egg|4433821c0f250034f03b37e94353285a7
 python3|3.12.3-1|glibc,zlib,libffi|eggs/python3-3.12.3-1.egg|a62d0fce14199b608591662b88b8e1674e09a8bed4655b72b506148b1ad45098|14945281|Python 3 programming language, with pip
 ramdisk-tools|1.0-3|glibc,gaster,curl|eggs/ramdisk-tools-1.0-3.egg|7e2fc1584bc918101e80157858f8b0580719dbe7ca8006d1dd2448a325d74111|57812183|SSH ramdisk for checkm8 devices (filesystem access on a device you own)
 seatd|0.8.0-1|glibc|eggs/seatd-0.8.0-1.egg|bf374b8f9907bbe6765a5e63ca94b5c4535e333243ad28a9cb3549623716a9d6|46730|Seat manager: lets your apps use the screen and input safely (seatd)
+sideloader|1.0-1|glibc,usbmuxd,libimobiledevice,curl|eggs/sideloader-1.0-1.egg|c58fb4c81ef6ae7e009512868cc4c0c12f493f81805950c84c52960303faf847|1554|Sideload iOS apps (.ipa) onto a device - the 'sideload' command (AltServer-Linux)
 sl|5.02-1||eggs/sl-5.02-1.egg|ef13e10b7d0e70747e6ec406f9a50cae61a6d47fd68c4a40fc1fb026a5f603d9|507887|A steam locomotive runs across your screen when you type sl instead of ls
 tree|2.2.1-1||eggs/tree-2.2.1-1.egg|0c1f03e441e769d14f20f947da503ba4cbced760e0d7bb6422d456cfe34e9b8d|513916|Show folders and files as a tree
-waddle-desktop|1.0-36|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-36.egg|76e3bb0609b2ac6f4b081dfcbdd8fba5ec73dad94b735b9c4162643c0f12b1e1|389231|Waddle Desktop with real windows for apps like Firefox
-waddle-system|0.45-1||eggs/waddle-system-0.45-1.egg|4496caf382d32f51e2882ef8669023ba1c7092971001e269eb4cc3bfea1e927f|29822910|Waddle Linux itself (kernel and system)
+usbmuxd|1.1.1-1|glibc,libimobiledevice|eggs/usbmuxd-1.1.1-1.egg|4e456f9ab2750f86e79aca98ec8b782c0a9603bb73c92f7edf183c2ac42255a0|36246|USB multiplexer daemon for iPhones/iPads (run: sudo usbmuxd)
+waddle-desktop|1.0-37|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-37.egg|792cb399e13ac927604706af3678b90945218de6f675ff7ec5985678bf5ea477|390909|Waddle Desktop with real windows for apps like Firefox
+waddle-system|0.46-1||eggs/waddle-system-0.46-1.egg|5e11695b1fe3f55e5401bbc94db85b6ec51e32fb4234d7933f8d2ed63939e897|29826179|Waddle Linux itself (kernel and system)
 wayland|1.22.0-1|glibc,libffi,expat|eggs/wayland-1.22.0-1.egg|e14734028478e571dbb7157eca07cbb3cb4969809a44fd0e7bf6b252ed6dfc30|123593|Wayland: how apps put windows on the screen
 wifi-firmware|20240318-1||eggs/wifi-firmware-20240318-1.egg|b6255f7411d038bdb5b24c517d540a2efe137e84a490cd9e8983fe64108566f6|73936510|Firmware for Wi-Fi cards and USB Wi-Fi adapters
 wlroots|0.17.1-2|glibc,mesa,libglvnd,wayland,libdrm,libinput,libxkbcommon,pixman,seatd,libdisplay-info,libudev-zero,hwdata|eggs/wlroots-0.17.1-2.egg|1f935d25ad7ebd85e740a8432b54ee9b357b7d7be048e8c72713ec0a7d156d9b|373830|Wayland window system library (wlroots)
