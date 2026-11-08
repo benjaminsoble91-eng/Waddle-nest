@@ -14,7 +14,7 @@ A tiny Linux distro built from scratch, starring **Pip** the mint penguin.
 - **Waddle's own package system:** `sudo waddle install <app>` gets apps (eggs) from the Nest, Waddle's own
   signed repository; every egg is compiled by us from the original source code (see below)
 - Commands: `waddle` (apps), `storage` (saving), `sound` (volume), `sudo` (admin), `newuser` (add a person),
-  `pip` (say hi), `say <text>`, `pipstyle text|pixel`, `pipcode` (Claude Code), `waddle-app` (desktop apps)
+  `pip` (code with Pip: Claude Code), `hipip` (say hi), `say <text>`, `pipstyle text|pixel`, `waddle-app` (desktop apps)
 - Two Pip styles in the console: **text** (detailed character art, default) and **pixel** (block pixel art).
   Pick per boot with the "Waddle Linux (pixel Pip)" menu entry, for you with `pipstyle pixel`, or once with `pip --pixel`.
 
@@ -249,11 +249,12 @@ Ubuntu archive's mirror (`source="apt ..."`, so they're easiest to hatch on Ubun
 
 Waddle can run Anthropic's Claude Code in its terminal, and Pip takes over its look and voice.
 
-1. `storage setup` first (so Claude Code is kept between boots).
-2. `waddle install claude-code` installs what it needs, all hatched from source: **glibc** (lets standard Linux
-   programs run), **bash**, **curl** with real certificate checking, and Mozilla's trusted certificate list.
-3. `claude-code-setup` adds Pip, then runs Anthropic's official installer.
-4. Type `pipcode` (or `claude`). The first time, it shows a link to sign in: open it on your phone, then type the code it shows.
+Just type **`pip`** in a terminal (or click **Pip Code** in Apps), like you'd type `claude`. The first time,
+Pip sets himself up: he asks for your password once to install what he needs from the Nest (all hatched from
+source: **glibc**, **bash**, **curl** with real certificate checking, Mozilla's trusted certificate list), adds
+his look, then runs Anthropic's official installer for Claude Code. Then it shows a link to sign in: open it on
+your phone, then type the code it shows. After that, `pip` starts Pip right away. (Set up saving first with
+`sudo storage setup`, so Claude Code is kept between boots.)
 
 What Pip changes (all through Claude Code's own customization features; Claude Code itself is untouched):
 - **Pixel Pip above the prompt** with a speech bubble when a session starts (a Claude Code *mod*, in
