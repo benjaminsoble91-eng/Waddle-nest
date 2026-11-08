@@ -96,7 +96,7 @@ apps resize from their bottom-right corner.
 
 ## The taskbar
 
-Pip (bottom left) opens the menu. Each open window has a button (click it to switch to or minimize that window).
+Pip (bottom left) opens the menu; right-click the desktop for a quick menu. Each open window has a button (click it to switch to or minimize that window; middle- or right-click it to close the window).
 Next to the clock: the **network** icon (click it to see your connection and address) and the **volume** icon
 (click to mute, scroll on it to change the volume).
 
