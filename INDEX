@@ -59,6 +59,7 @@ libxrandr|1.5.2-1|glibc,libxext,libxrender|eggs/libxrandr-1.5.2-1.egg|cc507ff8a7
 libxrender|0.9.10-1|glibc,libx11|eggs/libxrender-0.9.10-1.egg|b9700621d821f4fc9d022969a018cc1e60624de9376b038bb85456e10aa2ff93|18035|X Render extension library
 libxtst|1.2.3-1|glibc,libxi|eggs/libxtst-1.2.3-1.egg|04c1de68af093994155fef108e06fd0a4f44c84cbfa4da654e05a44a41a75c19|9874|X Record/Test extension library
 lua|5.4.7-2||eggs/lua-5.4.7-2.egg|0aad2d347401ffc06400fec5f59e481bd0ee288a49c567b0f6abb53494974466|666144|Lua: a small, fast programming language
+mesa|24.0.5-1|glibc,libdrm,libglvnd,wayland,expat,zlib,gcc-runtime|eggs/mesa-24.0.5-1.egg|608e201ac7ab2827968dbeea96f73ddfdf9cf81523449ecb146a21f3566eea32|6170215|Graphics drivers (Mesa: OpenGL ES for Intel graphics)
 mpv|0.37.0-1|glibc,ffmpeg,libass,libplacebo,libasound,wayland,libxkbcommon,zlib,freetype,fribidi,harfbuzz,fontconfig|eggs/mpv-0.37.0-1.egg|5f1352975db87b146f924089c2cb85aa4fa4cfb1fe850277d98494e663245e87|823936|Video and music player (mpv)
 mtdev|1.1.6-1|glibc|eggs/mtdev-1.1.6-1.egg|155eac6b9930763382356725955eae022c40c74806e33d419c0ff9c75fa87919|12685|Multitouch library (mtdev)
 pango|1.52.1-1|glibc,glib,harfbuzz,cairo,fontconfig,fribidi|eggs/pango-1.52.1-1.egg|aefae97f155af09ee91c4efbc6df83ced82eb10138fa7a2b1c934a724f0e0d14|281996|Text layout library (Pango)
@@ -68,9 +69,9 @@ pixman|0.42.2-1|glibc|eggs/pixman-0.42.2-1.egg|4433821c0f250034f03b37e94353285a7
 seatd|0.8.0-1|glibc|eggs/seatd-0.8.0-1.egg|bf374b8f9907bbe6765a5e63ca94b5c4535e333243ad28a9cb3549623716a9d6|46730|Seat manager: lets your apps use the screen and input safely (seatd)
 sl|5.02-1||eggs/sl-5.02-1.egg|ef13e10b7d0e70747e6ec406f9a50cae61a6d47fd68c4a40fc1fb026a5f603d9|507887|A steam locomotive runs across your screen when you type sl instead of ls
 tree|2.2.1-1||eggs/tree-2.2.1-1.egg|0c1f03e441e769d14f20f947da503ba4cbced760e0d7bb6422d456cfe34e9b8d|513916|Show folders and files as a tree
-waddle-desktop|1.0-19|glibc,wlroots,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-19.egg|4f06a8bb4994d0b771a0c8438338ec85a03b20f558de26c932134caca5a45a3f|359608|Waddle Desktop with real windows for apps like Firefox
-waddle-system|0.24-1||eggs/waddle-system-0.24-1.egg|374d0486e909583b57201ef6a46b812ef611121dd769145bb172d077429e24f8|21884732|Waddle Linux itself (kernel and system)
+waddle-desktop|1.0-20|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-20.egg|59e34924f5ca4b6d0832205a3a4d6978808818fc7b4bae7cdaa4059f31e67c42|359948|Waddle Desktop with real windows for apps like Firefox
+waddle-system|0.25-1||eggs/waddle-system-0.25-1.egg|f24b2a1105bc30521ec11015a7290394ca1f55a1336481e2344c8e2a1b7c0258|21884239|Waddle Linux itself (kernel and system)
 wayland|1.22.0-1|glibc,libffi,expat|eggs/wayland-1.22.0-1.egg|e14734028478e571dbb7157eca07cbb3cb4969809a44fd0e7bf6b252ed6dfc30|123593|Wayland: how apps put windows on the screen
-wlroots|0.17.1-1|glibc,wayland,libdrm,libinput,libxkbcommon,pixman,seatd,libdisplay-info,libudev-zero,hwdata|eggs/wlroots-0.17.1-1.egg|71386c18f02f73062a0f42daad6ac50ef992f444bdac883c468bc079c69d3fd9|351559|Wayland window system library (wlroots)
+wlroots|0.17.1-2|glibc,mesa,libglvnd,wayland,libdrm,libinput,libxkbcommon,pixman,seatd,libdisplay-info,libudev-zero,hwdata|eggs/wlroots-0.17.1-2.egg|1f935d25ad7ebd85e740a8432b54ee9b357b7d7be048e8c72713ec0a7d156d9b|373830|Wayland window system library (wlroots)
 xkeyboard-config|2.41-1|glibc|eggs/xkeyboard-config-2.41-1.egg|24ae62115fefb24cf087db46b7019218bd82f351cb6f71d41246f0b6fb1bfd9b|559150|Keyboard layouts (xkeyboard-config)
 zlib|1.3-1|glibc|eggs/zlib-1.3-1.egg|42abe85c93310ddb419da1549c3c9bdd113ace15a4400e6d8fc5b5a0983e6cf2|52455|Compression library (zlib)

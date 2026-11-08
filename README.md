@@ -76,6 +76,7 @@ Click **Settings** on the desktop (or in Pip's menu in the corner). Changes appl
 - **Time zone** (the clock, `date` in terminals, and file times), **12- or 24-hour clock**
 - **Wallpaper**: Pip's iceberg, Mint, Ocean, Sunset, Night or Lavender
 - **Pip on the desktop**: Pip stands on every wallpaper (turn him off here)
+- **Graphics acceleration**: on Intel graphics the graphics card draws (Mesa's iris driver); Off makes the CPU draw
 - **Style**: Light or Dark (windows, taskbar, menus, and apps like Firefox follow it)
 - **Mouse speed** and **natural scrolling** (and tap-to-click on touchpads, always on)
 - **Volume** and the **login sound**, and whether **Pip says hi** when you log in
@@ -196,7 +197,8 @@ runs if the windowed one can't start (or add `waddle.fbdesktop` to the boot opti
 Any GTK 3 / Wayland app works the same way: `waddle-app <command>` (try `waddle-app gtk3-widget-factory`).
 
 Sound in Firefox works through **apulse** (it gives Firefox the PulseAudio it asks for, on top of Waddle's ALSA
-sound). Not there yet: video is CPU-drawn (fine for browsing, heavy for 4K video).
+sound). On Intel graphics the desktop and Firefox are drawn by the graphics card (Mesa, built from source); on other
+cards the CPU draws. If the desktop ever stops unexpectedly, it restarts with the CPU drawing.
 
 ## Apps you can add
 
