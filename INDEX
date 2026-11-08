@@ -68,11 +68,12 @@ pango|1.52.1-1|glibc,glib,harfbuzz,cairo,fontconfig,fribidi|eggs/pango-1.52.1-1.
 pcre2|10.42-1|glibc|eggs/pcre2-10.42-1.egg|61dea2d7d6d7eebc5ee4f7dc3744c0f0a61cae01e9d761b4ab1dfa6e19bb943b|782641|Regular expressions library (PCRE2)
 pipfetch|1.0-1||eggs/pipfetch-1.0-1.egg|64939237d72978864863e3b01a0582a224acbfb42c8337dc1405fdd2f94419c3|1524|Pip shows your system info (Waddle's own fetch tool)
 pixman|0.42.2-1|glibc|eggs/pixman-0.42.2-1.egg|4433821c0f250034f03b37e94353285a76670e08ebcf1b1799687aa53a909505|306963|Pixel drawing library (pixman)
+python3|3.12.3-1|glibc,zlib,libffi|eggs/python3-3.12.3-1.egg|a62d0fce14199b608591662b88b8e1674e09a8bed4655b72b506148b1ad45098|14945281|Python 3 programming language, with pip
 seatd|0.8.0-1|glibc|eggs/seatd-0.8.0-1.egg|bf374b8f9907bbe6765a5e63ca94b5c4535e333243ad28a9cb3549623716a9d6|46730|Seat manager: lets your apps use the screen and input safely (seatd)
 sl|5.02-1||eggs/sl-5.02-1.egg|ef13e10b7d0e70747e6ec406f9a50cae61a6d47fd68c4a40fc1fb026a5f603d9|507887|A steam locomotive runs across your screen when you type sl instead of ls
 tree|2.2.1-1||eggs/tree-2.2.1-1.egg|0c1f03e441e769d14f20f947da503ba4cbced760e0d7bb6422d456cfe34e9b8d|513916|Show folders and files as a tree
-waddle-desktop|1.0-33|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-33.egg|e247d087253278a1e35cfca07fee5eb6b275b255aaa6d13a27e7ff52789459a8|388770|Waddle Desktop with real windows for apps like Firefox
-waddle-system|0.40-1||eggs/waddle-system-0.40-1.egg|b71bfc6df88e76b6c67870692f9e8d5155b728863689bde043219ce21ed8af54|29817321|Waddle Linux itself (kernel and system)
+waddle-desktop|1.0-34|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-34.egg|44d83e28c893a20b01c563b8f3e9c60f6dc88fe9cb0e90711e6d61d1f7478592|388907|Waddle Desktop with real windows for apps like Firefox
+waddle-system|0.41-1||eggs/waddle-system-0.41-1.egg|6f3007d2205363a0c91e127c441ad4d1b62c2b4b8dac1e6f324d24e8c0a4547d|29820532|Waddle Linux itself (kernel and system)
 wayland|1.22.0-1|glibc,libffi,expat|eggs/wayland-1.22.0-1.egg|e14734028478e571dbb7157eca07cbb3cb4969809a44fd0e7bf6b252ed6dfc30|123593|Wayland: how apps put windows on the screen
 wifi-firmware|20240318-1||eggs/wifi-firmware-20240318-1.egg|b6255f7411d038bdb5b24c517d540a2efe137e84a490cd9e8983fe64108566f6|73936510|Firmware for Wi-Fi cards and USB Wi-Fi adapters
 wlroots|0.17.1-2|glibc,mesa,libglvnd,wayland,libdrm,libinput,libxkbcommon,pixman,seatd,libdisplay-info,libudev-zero,hwdata|eggs/wlroots-0.17.1-2.egg|1f935d25ad7ebd85e740a8432b54ee9b357b7d7be048e8c72713ec0a7d156d9b|373830|Wayland window system library (wlroots)
