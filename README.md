@@ -76,7 +76,7 @@ Click **Settings** on the desktop (or in Pip's menu in the corner). Changes appl
 - **Time zone** (the clock, `date` in terminals, and file times), **12- or 24-hour clock**
 - **Wallpaper**: Pip's iceberg, Mint, Ocean, Sunset, Night or Lavender
 - **Mouse speed** and **natural scrolling** (and tap-to-click on touchpads, always on)
-- **Volume** and the **login sound**
+- **Volume** and the **login sound**, and whether **Pip says hi** when you log in
 - **Lock the screen** after 5 to 60 minutes of not using it (or only when you choose: Super+L or Lock in the menu)
 
 They're stored in `/etc/waddle/desktop.conf` (and the time zone in `/etc/waddle/timezone`).
