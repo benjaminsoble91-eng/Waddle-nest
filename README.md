@@ -80,6 +80,12 @@ Click **Settings** on the desktop (or in Pip's menu in the corner). Changes appl
 
 They're stored in `/etc/waddle/desktop.conf` (and the time zone in `/etc/waddle/timezone`).
 
+## The terminal
+
+- **Scroll back**: mouse wheel, or Shift+PageUp / Shift+PageDown (the last 3000 lines are kept). Typing jumps back down.
+- **Copy**: select text with the mouse (it's copied as soon as you let go), or Ctrl+Shift+C
+- **Paste**: Ctrl+Shift+V or Shift+Insert. Copy and paste work between terminals and apps like Firefox, both ways.
+
 ## Keyboard shortcuts
 
 | Keys | What it does |
