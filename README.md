@@ -80,8 +80,15 @@ Click **Settings** on the desktop (or in Pip's menu in the corner). Changes appl
 
 They're stored in `/etc/waddle/desktop.conf` (and the time zone in `/etc/waddle/timezone`).
 
+## Windows
+
+Drag a window by its title bar; drop it on the left or right edge of the screen to fill that half, or on the top
+edge to maximize it (drag it away to get its old size back). Double-click a title bar to maximize. Terminals and
+apps resize from their bottom-right corner.
+
 ## The terminal
 
+- **Any size**: maximize it, drag its corner, or snap it to half the screen; programs inside (htop, nano...) follow the new size
 - **Scroll back**: mouse wheel, or Shift+PageUp / Shift+PageDown (the last 3000 lines are kept). Typing jumps back down.
 - **Copy**: select text with the mouse (it's copied as soon as you let go), or Ctrl+Shift+C
 - **Paste**: Ctrl+Shift+V or Shift+Insert. Copy and paste work between terminals and apps like Firefox, both ways.
@@ -95,6 +102,7 @@ They're stored in `/etc/waddle/desktop.conf` (and the time zone in `/etc/waddle/
 | Alt+Tab | switch to the next window |
 | Alt+F4, Super+W or Super+Q | close the window |
 | Super+Up / Super+Down | maximize / restore or minimize |
+| Super+Left / Super+Right | fill the left / right half of the screen |
 | Super+D | show the desktop (again to bring the windows back) |
 | Super+I | Settings |
 | Super+E | About Waddle |
