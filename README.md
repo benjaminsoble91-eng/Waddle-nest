@@ -61,6 +61,10 @@ Waddle looks for, in this order:
 1. a partition labelled `waddle` (ext4): Waddle's own partition, for when it lives on a drive by itself
 2. `/waddle/storage.img` on any Linux drive (ext4, btrfs incl. subvolumes, xfs, f2fs)
 
+Only **this computer's own drives** count, plus the Waddle drive it booted from (a stick made with `waddle-install`).
+Storage on any other USB stick or SD card is never opened: it would bring its own accounts and root password. Sticks made
+with `waddle-install` carry a secret boot ID, so a look-alike stick can't pass for yours either.
+
 While looking, Waddle only *reads* drives (it doesn't even replay journals), so it's safe even if the other OS
 wasn't shut down cleanly. It only writes inside its own file or partition.
 
@@ -133,6 +137,9 @@ username box for them.
   crashing apps. (Turn off: create `/etc/waddle/no-zram`.)
 - **Firewall**: nothing can connect in from the network unless you allow it. `firewall` shows it,
   `sudo firewall allow 8080` opens a port, `sudo firewall deny 8080` closes it, `sudo firewall off|on`.
+- **Boot safety**: the boot line can't be edited at the boot menu on drives made with `waddle-install` (editing it
+  is a way to get root on any Linux). On NixOS, `waddle.nix` turns this off too (`boot.loader.systemd-boot.editor`).
+  The serial-port root shell (`waddle.serialroot`) only works in a virtual machine.
 - **Undo an app update**: `sudo waddle rollback <egg>` goes back to the version before its last update and keeps it
   there; `sudo waddle unhold <egg>` lets it update again.
 
