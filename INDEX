@@ -61,8 +61,8 @@ pixman|0.42.2-1|glibc|eggs/pixman-0.42.2-1.egg|4433821c0f250034f03b37e94353285a7
 seatd|0.8.0-1|glibc|eggs/seatd-0.8.0-1.egg|bf374b8f9907bbe6765a5e63ca94b5c4535e333243ad28a9cb3549623716a9d6|46730|Seat manager: lets your apps use the screen and input safely (seatd)
 sl|5.02-1||eggs/sl-5.02-1.egg|ef13e10b7d0e70747e6ec406f9a50cae61a6d47fd68c4a40fc1fb026a5f603d9|507887|A steam locomotive runs across your screen when you type sl instead of ls
 tree|2.2.1-1||eggs/tree-2.2.1-1.egg|0c1f03e441e769d14f20f947da503ba4cbced760e0d7bb6422d456cfe34e9b8d|513916|Show folders and files as a tree
-waddle-desktop|1.0-3|glibc,wlroots,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus|eggs/waddle-desktop-1.0-3.egg|306ad339ad08af17140ae8ab3618669dae47d4fea6143e5894def530acae72c8|283596|Waddle Desktop with real windows for apps like Firefox
-waddle-system|0.8-1||eggs/waddle-system-0.8-1.egg|214c97c684dede8aaca8ecb00a00ca2b8ad32a0560804cd80ed684b8d4a62465|21521234|Waddle Linux itself (kernel and system)
+waddle-desktop|1.0-4|glibc,wlroots,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus|eggs/waddle-desktop-1.0-4.egg|1225f073241aac8e1dc984fe6f9f5f1738eba73289edec299e6ff034904272f5|283597|Waddle Desktop with real windows for apps like Firefox
+waddle-system|0.9-1||eggs/waddle-system-0.9-1.egg|ec540aa30b6c9ffb01d904404f8946f7a24bd5d772502ba11dafef42bf78cc95|21577758|Waddle Linux itself (kernel and system)
 wayland|1.22.0-1|glibc,libffi,expat|eggs/wayland-1.22.0-1.egg|e14734028478e571dbb7157eca07cbb3cb4969809a44fd0e7bf6b252ed6dfc30|123593|Wayland: how apps put windows on the screen
 wlroots|0.17.1-1|glibc,wayland,libdrm,libinput,libxkbcommon,pixman,seatd,libdisplay-info,libudev-zero,hwdata|eggs/wlroots-0.17.1-1.egg|71386c18f02f73062a0f42daad6ac50ef992f444bdac883c468bc079c69d3fd9|351559|Wayland window system library (wlroots)
 xkeyboard-config|2.41-1|glibc|eggs/xkeyboard-config-2.41-1.egg|24ae62115fefb24cf087db46b7019218bd82f351cb6f71d41246f0b6fb1bfd9b|559150|Keyboard layouts (xkeyboard-config)

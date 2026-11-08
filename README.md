@@ -92,6 +92,7 @@ They're stored in `/etc/waddle/desktop.conf` (and the time zone in `/etc/waddle/
 | Super+D | show the desktop (again to bring the windows back) |
 | Super+I | Settings |
 | Super+E | About Waddle |
+| PrintScreen or Super+Shift+S | screenshot, saved as a PNG in your Pictures folder |
 | Volume keys | volume up, down, mute |
 | Ctrl+Alt+Backspace | leave the desktop (text console) |
 
