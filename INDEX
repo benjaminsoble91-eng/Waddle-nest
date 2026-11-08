@@ -69,8 +69,8 @@ pixman|0.42.2-1|glibc|eggs/pixman-0.42.2-1.egg|4433821c0f250034f03b37e94353285a7
 seatd|0.8.0-1|glibc|eggs/seatd-0.8.0-1.egg|bf374b8f9907bbe6765a5e63ca94b5c4535e333243ad28a9cb3549623716a9d6|46730|Seat manager: lets your apps use the screen and input safely (seatd)
 sl|5.02-1||eggs/sl-5.02-1.egg|ef13e10b7d0e70747e6ec406f9a50cae61a6d47fd68c4a40fc1fb026a5f603d9|507887|A steam locomotive runs across your screen when you type sl instead of ls
 tree|2.2.1-1||eggs/tree-2.2.1-1.egg|0c1f03e441e769d14f20f947da503ba4cbced760e0d7bb6422d456cfe34e9b8d|513916|Show folders and files as a tree
-waddle-desktop|1.0-23|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-23.egg|a60415fc678e11ba30312f4a7f88cc9c80c93fd03c908bafc799ef34cd0edf27|360124|Waddle Desktop with real windows for apps like Firefox
-waddle-system|0.29-1||eggs/waddle-system-0.29-1.egg|96b661cb522b4502b808a20187f9f1ecbd7765c5c8df470f9bbc182c8640fe47|22151394|Waddle Linux itself (kernel and system)
+waddle-desktop|1.0-24|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-24.egg|4042af43c97e2100f07ae3ddaa3f1f3a1b66b7b5ffe3667036a498f0d73afa3d|363907|Waddle Desktop with real windows for apps like Firefox
+waddle-system|0.30-1||eggs/waddle-system-0.30-1.egg|214399e7644b45e5377ef80eb27a5120c51a5d6ee7a74693a01efad366dcc452|22155181|Waddle Linux itself (kernel and system)
 wayland|1.22.0-1|glibc,libffi,expat|eggs/wayland-1.22.0-1.egg|e14734028478e571dbb7157eca07cbb3cb4969809a44fd0e7bf6b252ed6dfc30|123593|Wayland: how apps put windows on the screen
 wlroots|0.17.1-2|glibc,mesa,libglvnd,wayland,libdrm,libinput,libxkbcommon,pixman,seatd,libdisplay-info,libudev-zero,hwdata|eggs/wlroots-0.17.1-2.egg|1f935d25ad7ebd85e740a8432b54ee9b357b7d7be048e8c72713ec0a7d156d9b|373830|Wayland window system library (wlroots)
 xkeyboard-config|2.41-1|glibc|eggs/xkeyboard-config-2.41-1.egg|24ae62115fefb24cf087db46b7019218bd82f351cb6f71d41246f0b6fb1bfd9b|559150|Keyboard layouts (xkeyboard-config)
