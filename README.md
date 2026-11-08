@@ -90,6 +90,12 @@ Drag a window by its title bar; drop it on the left or right edge of the screen 
 edge to maximize it (drag it away to get its old size back). Double-click a title bar to maximize. Terminals and
 apps resize from their bottom-right corner.
 
+## Pictures
+
+Click a picture in Files (or **Pictures** in Apps) to open it in Waddle's picture editor: **Draw** (6 colors,
+3 pen sizes), **Crop** (drag a box), **Text** (click, type, Enter), **Rotate**, **Undo** (Ctrl+Z), and
+**Save copy** (Ctrl+S) saves "name (edited).png" next to the original. PNG pictures for now (screenshots are PNG).
+
 ## The terminal
 
 - **Any size**: maximize it, drag its corner, or snap it to half the screen; programs inside (htop, nano...) follow the new size
