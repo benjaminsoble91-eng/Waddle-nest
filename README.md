@@ -70,6 +70,16 @@ wasn't shut down cleanly. It only writes inside its own file or partition.
 - Don't hibernate NixOS and then boot Waddle; shut NixOS down normally first.
 - Windows (NTFS) and ZFS drives can't be used for Waddle's storage.
 
+## Settings
+
+Click **Settings** on the desktop (or in Pip's menu in the corner). Changes apply right away and are kept:
+- **Time zone** (the clock, `date` in terminals, and file times), **12- or 24-hour clock**
+- **Wallpaper**: Pip's iceberg, Mint, Ocean, Sunset, Night or Lavender
+- **Mouse speed** and **natural scrolling** (and tap-to-click on touchpads, always on)
+- **Volume** and the **login sound**
+
+They're stored in `/etc/waddle/desktop.conf` (and the time zone in `/etc/waddle/timezone`).
+
 ## Your account: login, passwords and sudo
 
 - **First boot:** Pip asks for your name, a username and a password, and you're in. That account can use `sudo`.
