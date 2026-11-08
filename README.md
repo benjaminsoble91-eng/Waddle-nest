@@ -106,8 +106,24 @@ Click a picture in Files (or **Pictures** in Apps) to open it in Waddle's pictur
 ## The taskbar
 
 Pip (bottom left) opens the menu; right-click the desktop for a quick menu. Each open window has a button (click it to switch to or minimize that window; middle- or right-click it to close the window).
-Next to the clock: the **network** icon (click it to see your connection and address) and the **volume** icon
-(click to mute, scroll on it to change the volume).
+Next to the clock: the **network** icon and the **volume** icon (click to mute, scroll on it to change the volume).
+
+## Wi-Fi
+
+Click the **network** icon in the taskbar: it shows your Ethernet connection, a Wi-Fi on/off switch and the
+networks nearby (signal and a lock for ones with a password). Click a network, type its password, press Enter.
+Waddle remembers it and joins it by itself from then on (hover a saved network for **Forget**). When both are
+plugged in, Ethernet is used first and Wi-Fi takes over if the cable comes out. The taskbar icon turns into Wi-Fi
+waves when that's your connection.
+
+From a terminal: `wifi` (status and networks nearby), `wifi connect "Name"`, `wifi forget "Name"`, `wifi saved`,
+`wifi off` / `wifi on`.
+
+Works with most Intel, Realtek, MediaTek, Qualcomm/Atheros and Broadcom Wi-Fi cards and USB Wi-Fi adapters, and with
+WPA2 and WPA3 home networks. The cards' firmware is a separate egg (`wifi-firmware`, ~70 MB): the first time Waddle
+sees a Wi-Fi card it downloads it by itself over Ethernet (or `sudo waddle install wifi-firmware`).
+School and work networks that ask for a username too (like eduroam) work the same way: the network list shows a
+username box for them.
 
 ## Under the hood
 

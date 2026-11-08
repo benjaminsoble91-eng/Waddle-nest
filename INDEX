@@ -69,9 +69,10 @@ pixman|0.42.2-1|glibc|eggs/pixman-0.42.2-1.egg|4433821c0f250034f03b37e94353285a7
 seatd|0.8.0-1|glibc|eggs/seatd-0.8.0-1.egg|bf374b8f9907bbe6765a5e63ca94b5c4535e333243ad28a9cb3549623716a9d6|46730|Seat manager: lets your apps use the screen and input safely (seatd)
 sl|5.02-1||eggs/sl-5.02-1.egg|ef13e10b7d0e70747e6ec406f9a50cae61a6d47fd68c4a40fc1fb026a5f603d9|507887|A steam locomotive runs across your screen when you type sl instead of ls
 tree|2.2.1-1||eggs/tree-2.2.1-1.egg|0c1f03e441e769d14f20f947da503ba4cbced760e0d7bb6422d456cfe34e9b8d|513916|Show folders and files as a tree
-waddle-desktop|1.0-28|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-28.egg|88c620f800f52911194f2baf0df9446804f77361e137628c4f785e15e3774e2a|365922|Waddle Desktop with real windows for apps like Firefox
-waddle-system|0.34-1||eggs/waddle-system-0.34-1.egg|f2197a81747435d3b25d1a090ea793d3364eaee91342c77c48a9560f084c5fa4|23095261|Waddle Linux itself (kernel and system)
+waddle-desktop|1.0-29|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-29.egg|e01699807c56f890b0506da40c98f0591a697fc5c72edf945daa5428ff6784c0|376151|Waddle Desktop with real windows for apps like Firefox
+waddle-system|0.35-1||eggs/waddle-system-0.35-1.egg|a1b0c0ef36b303f614083f14859088ced4d6a302c7b435cecf1bfddbd4b2616e|29790917|Waddle Linux itself (kernel and system)
 wayland|1.22.0-1|glibc,libffi,expat|eggs/wayland-1.22.0-1.egg|e14734028478e571dbb7157eca07cbb3cb4969809a44fd0e7bf6b252ed6dfc30|123593|Wayland: how apps put windows on the screen
+wifi-firmware|20240318-1||eggs/wifi-firmware-20240318-1.egg|b6255f7411d038bdb5b24c517d540a2efe137e84a490cd9e8983fe64108566f6|73936510|Firmware for Wi-Fi cards and USB Wi-Fi adapters
 wlroots|0.17.1-2|glibc,mesa,libglvnd,wayland,libdrm,libinput,libxkbcommon,pixman,seatd,libdisplay-info,libudev-zero,hwdata|eggs/wlroots-0.17.1-2.egg|1f935d25ad7ebd85e740a8432b54ee9b357b7d7be048e8c72713ec0a7d156d9b|373830|Wayland window system library (wlroots)
 xkeyboard-config|2.41-1|glibc|eggs/xkeyboard-config-2.41-1.egg|24ae62115fefb24cf087db46b7019218bd82f351cb6f71d41246f0b6fb1bfd9b|559150|Keyboard layouts (xkeyboard-config)
 zlib|1.3-1|glibc|eggs/zlib-1.3-1.egg|42abe85c93310ddb419da1549c3c9bdd113ace15a4400e6d8fc5b5a0983e6cf2|52455|Compression library (zlib)
