@@ -80,6 +80,21 @@ Click **Settings** on the desktop (or in Pip's menu in the corner). Changes appl
 
 They're stored in `/etc/waddle/desktop.conf` (and the time zone in `/etc/waddle/timezone`).
 
+## Keyboard shortcuts
+
+| Keys | What it does |
+|---|---|
+| Super (the Windows key), tap it | open Pip's menu (Esc closes it) |
+| Super+T, Super+Enter or Ctrl+Alt+T | new terminal |
+| Alt+Tab | switch to the next window |
+| Alt+F4, Super+W or Super+Q | close the window |
+| Super+Up / Super+Down | maximize / restore or minimize |
+| Super+D | show the desktop (again to bring the windows back) |
+| Super+I | Settings |
+| Super+E | About Waddle |
+| Volume keys | volume up, down, mute |
+| Ctrl+Alt+Backspace | leave the desktop (text console) |
+
 ## Your account: login, passwords and sudo
 
 - **First boot:** Pip asks for your name, a username and a password, and you're in. That account can use `sudo`.
