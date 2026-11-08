@@ -146,6 +146,18 @@ sound mixer        # every volume control (alsamixer)
 ```
 Waddle remembers your volume between boots. Intel HD Audio (most PCs, incl. HDMI audio) and USB sound cards work.
 
+## Installing Waddle on its own drive or USB stick
+
+Waddle can live on its own drive and start without NixOS. Plug in a USB stick or drive (it will be ERASED),
+then in a terminal:
+
+    sudo waddle-install              # lists your drives
+    sudo waddle-install /dev/sdb     # installs on that one (you type its name to confirm)
+
+It makes a small boot partition (with the systemd-boot boot loader) and a Linux partition for your files,
+and can copy your account, files, apps and settings over. To start it, pick the drive in your PC's boot menu
+(F9 on HP computers); Secure Boot must be off. Updates go to that drive by themselves.
+
 ## Updating Waddle
 
 `sudo waddle upgrade` updates your eggs, then checks the Nest for a newer **Waddle itself** (kernel and system).
