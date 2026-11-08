@@ -75,7 +75,7 @@ wasn't shut down cleanly. It only writes inside its own file or partition.
 Click **Settings** on the desktop (or in Pip's menu in the corner). Changes apply right away and are kept:
 - **Time zone** (the clock, `date` in terminals, and file times), **12- or 24-hour clock**
 - **Wallpaper**: Pip's iceberg, Mint, Ocean, Sunset, Night or Lavender
-- **Pip on the desktop**: Pip stands on every wallpaper in the pose you pick: Classic, Waving, Cheering, Sleepy, Shy, Surprised or Winking (or Off)
+- **Pip on the desktop**: Pip stands on every wallpaper (turn him off here)
 - **Graphics acceleration**: on Intel graphics the graphics card draws (Mesa's iris driver); Off makes the CPU draw
 - **Style**: Light or Dark (windows, taskbar, menus, and apps like Firefox follow it)
 - **Mouse speed** and **natural scrolling** (and tap-to-click on touchpads, always on)
