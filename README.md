@@ -94,6 +94,12 @@ apps resize from their bottom-right corner.
 - **Copy**: select text with the mouse (it's copied as soon as you let go), or Ctrl+Shift+C
 - **Paste**: Ctrl+Shift+V or Shift+Insert. Copy and paste work between terminals and apps like Firefox, both ways.
 
+## The taskbar
+
+Pip (bottom left) opens the menu. Each open window has a button (click it to switch to or minimize that window).
+Next to the clock: the **network** icon (click it to see your connection and address) and the **volume** icon
+(click to mute, scroll on it to change the volume).
+
 ## Keyboard shortcuts
 
 | Keys | What it does |
