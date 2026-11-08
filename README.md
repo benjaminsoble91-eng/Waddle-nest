@@ -1,11 +1,211 @@
-# Waddle Nest
+# Waddle Linux 🐧
 
-The package repository ("Nest") for **Waddle Linux**, the little distro starring Pip the mint penguin.
+A tiny Linux distro built from scratch, starring **Pip** the mint penguin.
 
-- `INDEX` lists every egg (package): name, version, dependencies, file, SHA-256 and size.
-- `INDEX.sig` is the Ed25519 signature of `INDEX`. Waddle checks it with the public key built into Waddle,
-  and checks each egg's SHA-256 against the signed INDEX, so nothing here can be changed without Waddle noticing.
-- `eggs/` holds the eggs. Every one is built from original source code by Waddle's `hatch` tool.
-- `waddle-system-*.egg`, when present, is Waddle itself (kernel + system), used by `sudo waddle upgrade`.
+- Linux kernel 6.12 + BusyBox, runs from RAM, with **saving** that Waddle handles all by itself (see below)
+- Pip boot splash, then a **login screen** (on first boot Pip helps you make your account), then **Waddle
+  Desktop**: our own from-scratch desktop (wallpaper, taskbar + launcher, clock, draggable windows, a real
+  Terminal, Firefox in its own window, About, and Pip). Add `nodesktop` to the boot options to log in at the text console instead.
+- **Accounts and passwords**, with `sudo` for admin tasks. Your home folder is `/home/<you>`.
+- **Sound** (Intel HD Audio and USB sound cards), with a chime from Pip when you log in
+- **Updates for everything**: `sudo waddle upgrade` updates your apps *and Waddle itself*
+- **Firefox**, running on a real Wayland + GTK 3 stack that Waddle builds from source
+- Wired Ethernet connects automatically (Intel, Realtek, Broadcom, Atheros drivers built in)
+- **Waddle's own package system:** `sudo waddle install <app>` gets apps (eggs) from the Nest, Waddle's own
+  signed repository; every egg is compiled by us from the original source code (see below)
+- Commands: `waddle` (apps), `storage` (saving), `sound` (volume), `sudo` (admin), `newuser` (add a person),
+  `pip` (say hi), `say <text>`, `pipstyle text|pixel`, `pipcode` (Claude Code), `waddle-app` (desktop apps)
+- Two Pip styles in the console: **text** (detailed character art, default) and **pixel** (block pixel art).
+  Pick per boot with the "Waddle Linux (pixel Pip)" menu entry, for you with `pipstyle pixel`, or once with `pip --pixel`.
 
-On Waddle: `sudo waddle nest https://raw.githubusercontent.com/benjaminsoble91-eng/waddle-nest/main`
+## Install on NixOS (adds a boot menu entry, keeps NixOS)
+
+1. Copy this folder onto your PC as `/etc/nixos/waddle/`:
+   ```
+   sudo mkdir -p /etc/nixos/waddle
+   sudo cp vmlinuz-waddle initramfs-waddle.cpio.gz waddle-version waddle.nix /etc/nixos/waddle/
+   ```
+2. Open `/etc/nixos/configuration.nix` and add the file to `imports`:
+   ```nix
+   imports = [
+     ./hardware-configuration.nix
+     ./waddle/waddle.nix
+   ];
+   ```
+3. Rebuild:
+   ```
+   sudo nixos-rebuild boot
+   ```
+4. Reboot and pick **Waddle Linux** (or **Waddle Linux (pixel Pip)**) from the boot menu.
+   **Waddle Linux (previous version)** boots the version from before the last update, in case one goes wrong.
+
+**Already had Waddle 0.1?** Copy the new files over the old ones and rebuild the same way. NixOS now only puts
+Waddle on the boot partition when the copy in `/etc/nixos/waddle/` is newer; after that Waddle updates itself.
+
+**Boot menu flashes by too fast?** Add `boot.loader.timeout = 5;` to configuration.nix and rebuild.
+(With systemd-boot you can also hold Space while the PC starts.)
+
+**Using flakes?** Run `git add waddle/` in your config repo before rebuilding, or Nix won't see the files.
+
+## Saving files
+
+Waddle manages its own saving. No other OS is needed to set it up.
+
+**First time:** boot Waddle, make your account, open a Terminal and run `sudo storage setup`. Pick a drive from the list and type `yes`.
+Waddle creates **one file on that drive: `/waddle/storage.img`** (up to 4 GB, but it only takes up space as you
+fill it) and keeps your home folder (`/home/<you>`), accounts, apps and Waddle settings in it. Nothing else on that drive is touched.
+
+**Every boot after that:** Waddle finds its storage by itself and opens it.
+
+Waddle looks for, in this order:
+1. a partition labelled `waddle` (ext4): Waddle's own partition, for when it lives on a drive by itself
+2. `/waddle/storage.img` on any Linux drive (ext4, btrfs incl. subvolumes, xfs, f2fs)
+
+While looking, Waddle only *reads* drives (it doesn't even replay journals), so it's safe even if the other OS
+wasn't shut down cleanly. It only writes inside its own file or partition.
+
+- `storage` (or **About Waddle**) shows whether saving is on and how much space is used.
+- Always shut down with **Power off**/**Restart** (menu or login screen) or `sudo poweroff`, not the power button, so storage
+  is closed cleanly.
+- Don't hibernate NixOS and then boot Waddle; shut NixOS down normally first.
+- Windows (NTFS) and ZFS drives can't be used for Waddle's storage.
+
+## Your account: login, passwords and sudo
+
+- **First boot:** Pip asks for your name, a username and a password, and you're in. That account can use `sudo`.
+- **After that:** the login screen asks for your password. Menu > **Log out** goes back to it.
+- Your terminals run as you, not as the all-powerful root account. For things that change the whole system,
+  put `sudo` in front: `sudo waddle install htop`, `sudo storage setup`, `sudo poweroff`. It asks for *your*
+  password and remembers it for 5 minutes. `sudo -i` opens a root shell.
+- `passwd` changes your password. `sudo newuser` adds another person (each gets their own home folder).
+- Root can't log in directly (it has no password); use `sudo`. To fix a broken system from another computer,
+  the boot option `waddle.serialroot` gives a root shell on the serial port.
+- Coming from Waddle 0.1 (everything ran as root): your old files are still in `/root`; get them with
+  `sudo cp -r /root/<thing> ~/ && sudo chown -R $USER ~/<thing>`. Run `claude-code-setup` again as yourself.
+
+## Sound
+
+`sudo waddle install alsa-utils` once, then:
+```
+sound              # sound cards and volume
+sound test         # Pip's chime, then "front left / front right"
+sound volume 70    # or: sound up, sound down, sound mute, sound unmute
+sound mixer        # every volume control (alsamixer)
+```
+Waddle remembers your volume between boots. Intel HD Audio (most PCs, incl. HDMI audio) and USB sound cards work.
+
+## Updating Waddle
+
+`sudo waddle upgrade` updates your eggs, then checks the Nest for a newer **Waddle itself** (kernel and system).
+If there is one, it's checked (signature + checksum + sanity checks), written next to the current one on the
+boot partition, and the current one is kept as **Waddle Linux (previous version)** in the boot menu. Restart to
+use it. `waddle system` shows which version you're running and where Waddle boots from.
+
+**You don't have to remember to check:** 30 seconds after you log in (and every 6 hours), Waddle Desktop
+quietly checks the Nest. When there's something new, Pip shows a card in the top-right corner:
+"Waddle 0.3 is out! Click here to update" (or "3 app updates are ready"). Click it to update, or click the
+x to hide it until the next version. Once a new Waddle is installed, the card says "click here to restart".
+
+To publish a new Waddle (for the Nest owner): `nest/tools/make-system <version> vmlinuz-waddle initramfs-waddle.cpio.gz`,
+then upload the new egg + INDEX + INDEX.sig like any other egg.
+
+## Firefox and other desktop apps
+
+```
+sudo waddle install firefox     # everything Firefox needs (about 40 MB of libraries, all built from source)
+firefox-setup                   # gets the newest official Firefox from Mozilla (as you, no sudo)
+```
+Then click **Firefox** on the desktop (or type `firefox`). Firefox opens in a **normal window**: minimize,
+maximize and close, drag it around, resize it from the edges, and switch with its taskbar button, right next
+to your terminals. Firefox updates itself after that.
+
+How it works: since Waddle 0.6, Waddle Desktop is a real **Wayland window system** (a compositor built on
+wlroots), installed as the `waddle-desktop` egg (Firefox brings it along). Apps connect to it and get windows
+with Waddle title bars; apps that draw their own title bar (GTK apps with header bars, Firefox's tabs) keep
+theirs. The Nest builds the whole stack from the original source code (Wayland, wlroots, GTK 3, glib, cairo,
+pango, HarfBuzz, FreeType, fontconfig, libinput, the X11 client libraries Firefox links to, and more). It draws
+with the CPU, so it works on any graphics card. The simple built-in desktop stays in Waddle as a fallback: it
+runs if the windowed one can't start (or add `waddle.fbdesktop` to the boot options).
+Any GTK 3 / Wayland app works the same way: `waddle-app <command>` (try `waddle-app gtk3-widget-factory`).
+
+Not there yet: video is CPU-drawn (fine for browsing, heavy for 4K video), and Firefox sound needs
+PulseAudio/PipeWire, which isn't in the Nest yet.
+
+## Getting apps: eggs from the Nest
+
+Waddle has its own package system:
+- **Recipes** (`nest/recipes/`) say where a program's original source code lives and how to build it.
+- **`hatch`** (`nest/tools/hatch`) builds a recipe into an **egg**, a Waddle package, and updates the Nest's
+  package list (`INDEX`), signed with the Nest key.
+- **The Nest** is the folder `nest/repo/` (INDEX, INDEX.sig, eggs/) put anywhere on the web.
+- **`waddle`** on Waddle downloads eggs, checks the signature and checksums, and installs them into `/apps`,
+  which lives in Waddle's saved storage, so apps stay installed after reboots.
+
+On Waddle:
+```
+sudo waddle nest <url>   # once: where your Nest lives
+waddle search            # see what's available
+sudo waddle install htop # install (and anything it needs)
+waddle list | info <egg>
+sudo waddle remove <egg> | upgrade | reinstall <egg>
+```
+Eggs include **htop**, **lua**, **tree**, **cmatrix**, **sl**, **pipfetch** (Pip shows your system info),
+**alsa-utils** (sound), **claude-code**, and **firefox** with its whole GTK/Wayland stack.
+
+### Publishing your Nest on GitHub
+1. Make a public GitHub repo, e.g. `waddle-nest`.
+2. Upload the *contents* of `nest/repo/` to it (`INDEX`, `INDEX.sig`, and the `eggs` folder).
+3. On Waddle: `waddle nest https://raw.githubusercontent.com/<your-name>/waddle-nest/main`
+
+### Adding a new app
+Write `nest/recipes/<app>.recipe` (copy an existing one), then on any Linux PC with build tools run
+`nest/tools/hatch <app>` and upload the new egg + INDEX + INDEX.sig. On NixOS you can get the build tools with:
+`nix-shell -p gcc gnumake autoconf automake libtool pkg-config git ncurses file`
+
+The GTK/Wayland stack's recipes are generated by `nest/stack/gen-recipes.py`. They build shared libraries
+(recipe `kind=lib`) under `/apps` on the build machine, and fetch each original source tarball through the
+Ubuntu archive's mirror (`source="apt ..."`, so they're easiest to hatch on Ubuntu with `deb-src` enabled), plus
+`meson`, `ninja`, `bison`, `flex` and `gperf`.
+
+**Keep `nest-private/nest.secret` private.** It's the key that proves eggs are really yours; never upload it.
+`hatch` uses it automatically if it's at `nest/keys/nest.secret` (or set `NEST_KEY=/path/to/nest.secret`).
+
+## Claude Code on Waddle (Pip edition)
+
+Waddle can run Anthropic's Claude Code in its terminal, and Pip takes over its look and voice.
+
+1. `storage setup` first (so Claude Code is kept between boots).
+2. `waddle install claude-code` installs what it needs, all hatched from source: **glibc** (lets standard Linux
+   programs run), **bash**, **curl** with real certificate checking, and Mozilla's trusted certificate list.
+3. `claude-code-setup` adds Pip, then runs Anthropic's official installer.
+4. Type `pipcode` (or `claude`). The first time, it shows a link to sign in: open it on your phone, then type the code it shows.
+
+What Pip changes (all through Claude Code's own customization features; Claude Code itself is untouched):
+- **Pixel Pip above the prompt** with a speech bubble when a session starts (a Claude Code *mod*, in
+  `/apps/share/claude-code/pip-mod`). He naps once you send your first message; `/pip` calls him back.
+  On a small window he's a one-line `>v<` greeting instead. He shows up a few seconds after Claude Code opens.
+- **Pip's header**: Waddle Desktop's terminal shows Claude Code's welcome header Pip-style: Pip in the mascot's
+  spot, the title as `Pip v<version>` (the real version number), and the model under a penguin name with its
+  real number: Opus = **Emperor Pip**, Sonnet = **King Pip**, Haiku = **Little Pip**, Fable = **Royal Pip**.
+  The status line uses the same names. Only the picture on your screen changes; Claude Code itself isn't
+  modified, and menus like `/model` still use the real names. `pipcover off` shows the original header again
+  (`pipcover on` to undo). On the plain text console (no desktop) you'll see the mascot in mint instead.
+- **Mint theme** (`~/.claude/themes/waddle.json`): accents, prompt border and the mascot's color turn Pip-mint.
+- **Pip's voice**, an output style (`~/.claude/output-styles/pip.md`). `/output-style default` turns it off.
+- **Status line** `>v< Emperor Pip 5.5 · folder`, penguin spinner words ("Waddling...", "Belly-sliding...") and Pip tips.
+
+Notes:
+- Claude Code needs a Pro, Max, Team, Enterprise or Console account (the free plan doesn't include it).
+- If you already had your own `~/.claude/settings.json`, setup leaves it alone; copy what you want from
+  `/apps/share/claude-code/settings.json`. `/theme` switches back to the stock colors.
+- Claude Code is installed in your home folder (`~/.local/bin/claude`) and updates itself.
+
+## Uninstall
+
+Remove `./waddle/waddle.nix` from `imports` and run `sudo nixos-rebuild boot`.
+If you set up saving, delete Waddle's files too with `sudo rm -r /waddle` (on the drive you picked).
+
+## Notes
+
+- Only your home folder and Waddle settings are saved; everything else resets each boot.
+- To leave, type `poweroff` or `reboot`.
