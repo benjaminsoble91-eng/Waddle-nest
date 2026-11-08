@@ -151,6 +151,9 @@ x to hide it until the next version. Once a new Waddle is installed, the card sa
 To publish a new Waddle (for the Nest owner): `nest/tools/make-system <version> vmlinuz-waddle initramfs-waddle.cpio.gz`,
 then upload the new egg + INDEX + INDEX.sig like any other egg.
 
+After an update, the first time you log in Pip shows a **What's new** window listing everything that changed
+since the version you had before.
+
 ## Firefox and other desktop apps
 
 ```
