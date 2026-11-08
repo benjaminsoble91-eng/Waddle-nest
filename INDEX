@@ -7,7 +7,7 @@ bash|5.3-1||eggs/bash-5.3-1.egg|1e8534997f6861d21dc334183b5e1a4c30b1a7ef11465ade
 ca-certificates|2026.10.23-1||eggs/ca-certificates-2026.10.23-1.egg|e96b23940c6337e5e41a7aeb8a055a9f25446cd9b5afca2533d3b204e409b47b|130208|Trusted certificate authorities (Mozilla's list, via certifi) for secure downloads
 cage|0.1.5+20240127-1|glibc,wlroots|eggs/cage-0.1.5+20240127-1.egg|d9d535c95c0e4a35fca276e24aa41a6e03b1c127524bfc9f5d76cfc2befc643f|19572|Cage: runs one Wayland app full screen (how Waddle shows Firefox)
 cairo|1.18.0-1|glibc,pixman,fontconfig,freetype,libpng,libx11,libxext,libxrender,libxcb,glib,zlib|eggs/cairo-1.18.0-1.egg|013ee6146eb154ca9bf99cb33fd77dc54c9ced33761085dbfafba91cf6d01d4a|744502|2D graphics library (cairo)
-claude-code|1.0-5|glibc,bash,curl,ca-certificates|eggs/claude-code-1.0-5.egg|914ad1d0e09a6d6ad18b96b4ac2078e7a8ae2450340679b2ba6155b3b4c8b867|5810|Get ready for Claude Code (Pip's look and personality); then run claude-code-setup
+claude-code|1.0-6|glibc,bash,curl,ca-certificates|eggs/claude-code-1.0-6.egg|b6bcc5fb6973cd46c4b5e976c82ba0248ef06b6b525759a43fd917a7386d16c5|6649|Get ready for Claude Code (Pip's look and personality); then run claude-code-setup
 cmatrix|2.0-1||eggs/cmatrix-2.0-1.egg|e5841bb8afcdffd31632560926bc1067a8f0cbe8dd463f5f1b48bdbf333fee81|540246|The falling green code from The Matrix, in your terminal
 curl|8.10.1-1|ca-certificates|eggs/curl-8.10.1-1.egg|4b2ec694e66b91dae35eb5014ab1eae4254293fb7e3c701161eeaaad5e60c70f|2853987|curl: download files over the internet, with real certificate checks
 dbus|1.14.10-1|glibc,expat|eggs/dbus-1.14.10-1.egg|97f8e62332a1652cec06679663db753b4598da772d3d9832a5a9e759bc33c4ac|312883|Message bus apps use to talk to each other (D-Bus)
@@ -70,7 +70,7 @@ seatd|0.8.0-1|glibc|eggs/seatd-0.8.0-1.egg|bf374b8f9907bbe6765a5e63ca94b5c4535e3
 sl|5.02-1||eggs/sl-5.02-1.egg|ef13e10b7d0e70747e6ec406f9a50cae61a6d47fd68c4a40fc1fb026a5f603d9|507887|A steam locomotive runs across your screen when you type sl instead of ls
 tree|2.2.1-1||eggs/tree-2.2.1-1.egg|0c1f03e441e769d14f20f947da503ba4cbced760e0d7bb6422d456cfe34e9b8d|513916|Show folders and files as a tree
 waddle-desktop|1.0-21|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-21.egg|d38a540e8e7aaff8abda07c584801cce130e47a11690e079352654339ee5a62c|359941|Waddle Desktop with real windows for apps like Firefox
-waddle-system|0.26-1||eggs/waddle-system-0.26-1.egg|86c67be1101a72fbd2d9e4bd0626eab60fbaf5e56db9e7683ee6d2a3b3281aa8|21886958|Waddle Linux itself (kernel and system)
+waddle-system|0.27-1||eggs/waddle-system-0.27-1.egg|570b585d14395818719f4b8fbf3751d05aa8ff36e84d5bfed717e5e42370388b|21888816|Waddle Linux itself (kernel and system)
 wayland|1.22.0-1|glibc,libffi,expat|eggs/wayland-1.22.0-1.egg|e14734028478e571dbb7157eca07cbb3cb4969809a44fd0e7bf6b252ed6dfc30|123593|Wayland: how apps put windows on the screen
 wlroots|0.17.1-2|glibc,mesa,libglvnd,wayland,libdrm,libinput,libxkbcommon,pixman,seatd,libdisplay-info,libudev-zero,hwdata|eggs/wlroots-0.17.1-2.egg|1f935d25ad7ebd85e740a8432b54ee9b357b7d7be048e8c72713ec0a7d156d9b|373830|Wayland window system library (wlroots)
 xkeyboard-config|2.41-1|glibc|eggs/xkeyboard-config-2.41-1.egg|24ae62115fefb24cf087db46b7019218bd82f351cb6f71d41246f0b6fb1bfd9b|559150|Keyboard layouts (xkeyboard-config)
