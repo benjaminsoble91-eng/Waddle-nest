@@ -19,6 +19,7 @@ fonts-dejavu|2.37-1||eggs/fonts-dejavu-2.37-1.egg|ebe5f038e2ca1526aedf1711b8b849
 freetype|2.13.2-1|glibc,zlib,libpng|eggs/freetype-2.13.2-1.egg|10785f319c0a92e6093d025f44af3349365854d15ee5302ae7697d4b0895dec8|379403|Font rendering library (FreeType)
 fribidi|1.0.13-1|glibc|eggs/fribidi-1.0.13-1.egg|ae3f2093026090dc1dcb1ef45ae531202db54d3d4febd8c8c5a1bb836705f992|23152|Right-to-left text library (FriBidi)
 galculator|2.1.4-2|glibc,gtk3|eggs/galculator-2.1.4-2.egg|565659f553720c7b2cf3ba8ddcfffddc00369b84a27745b76cc53f61b8181dcf|216920|Calculator (basic and scientific)
+gaster|1.0-1|glibc,libusb|eggs/gaster-1.0-1.egg|476ae7d24c9876c553ce539e315c6e9fe33b297e958b2a80cba2ed6ceb184bca|1711796|checkm8 pwned-DFU tool (A7-A11 devices)
 gcc-runtime|13.2.0-1|glibc|eggs/gcc-runtime-13.2.0-1.egg|ab4d8dcede6a798c8d5f107837f9e8bbffd9f6af58daed2528645c6185c7e966|942645|C++ runtime libraries (libstdc++, libgcc_s) from GCC
 gdk-pixbuf|2.42.10-1|glibc,glib,libpng|eggs/gdk-pixbuf-2.42.10-1.egg|4143372b9b300b3dc3f704baa3256f0de20224d801f63f696c7d55e4da45b442|688420|Image loading library (GdkPixbuf)
 glibc-locales|2.40-1|glibc|eggs/glibc-locales-2.40-1.egg|dded54aba6b91bf8293caa366510cc16d95aaaa6418bf465917a6e8e83032c31|687769|UTF-8 language settings (C.UTF-8, en_US.UTF-8) for desktop apps
@@ -42,6 +43,7 @@ libinput|1.25.0-1|glibc,libevdev,mtdev,libudev-zero|eggs/libinput-1.25.0-1.egg|0
 libplacebo|6.338.2-1|glibc|eggs/libplacebo-6.338.2-1.egg|66e438dc847007759fe83eeda0ebd85858f49d1df9cda2704a5d486f550dc44f|284143|Video rendering helpers (libplacebo)
 libpng|1.6.43-1|glibc,zlib|eggs/libpng-1.6.43-1.egg|a8eac90445a1e305208946d582c00180ef1d8ddbd04c691d3d3b55370b1507d5|134347|PNG image library
 libudev-zero|1.0.3-1|glibc|eggs/libudev-zero-1.0.3-1.egg|2f0766daed9d3766aa02e50abfe9d0c79521b228c3a5b65a7ec2023200a2b152|11925|Device discovery library without a udev daemon (libudev-zero)
+libusb|1.0.27-1|glibc|eggs/libusb-1.0.27-1.egg|243c7358e46eef82cb0fc64164d63819d0607574708ef0561e12fb8c8f6f877d|54842|USB device access library
 libx11|1.8.7-1|glibc,libxcb|eggs/libx11-1.8.7-1.egg|68c7e408705cf601290e1a0feab01e79b46da2076243d5266eaf245c2eecc398|947122|X11 client library (libX11)
 libxau|1.0.9-1|glibc|eggs/libxau-1.0.9-1.egg|61192c7d0241330a90adbd49c6c236f89aaf315472b783d6db6cd6e6be276dc7|5198|X11 authorisation library
 libxcb|1.15-1|glibc,libxau,libxdmcp|eggs/libxcb-1.15-1.egg|8c1faa54ecaf4ea2d1bda04205dce5e85a6d363e3b326c94746cf13f4dc7b371|241832|X11 C bindings (XCB)
@@ -69,8 +71,8 @@ pixman|0.42.2-1|glibc|eggs/pixman-0.42.2-1.egg|4433821c0f250034f03b37e94353285a7
 seatd|0.8.0-1|glibc|eggs/seatd-0.8.0-1.egg|bf374b8f9907bbe6765a5e63ca94b5c4535e333243ad28a9cb3549623716a9d6|46730|Seat manager: lets your apps use the screen and input safely (seatd)
 sl|5.02-1||eggs/sl-5.02-1.egg|ef13e10b7d0e70747e6ec406f9a50cae61a6d47fd68c4a40fc1fb026a5f603d9|507887|A steam locomotive runs across your screen when you type sl instead of ls
 tree|2.2.1-1||eggs/tree-2.2.1-1.egg|0c1f03e441e769d14f20f947da503ba4cbced760e0d7bb6422d456cfe34e9b8d|513916|Show folders and files as a tree
-waddle-desktop|1.0-32|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-32.egg|cb6d2af6744d6118b6dfdcb912b9cb1e2675da82203d2213861467b2a29585f9|388074|Waddle Desktop with real windows for apps like Firefox
-waddle-system|0.39-1||eggs/waddle-system-0.39-1.egg|aeeccdd8536a41fee04fecb8a10554351a10eee2607a2b65badf63025bfa7db2|29817223|Waddle Linux itself (kernel and system)
+waddle-desktop|1.0-33|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-33.egg|e247d087253278a1e35cfca07fee5eb6b275b255aaa6d13a27e7ff52789459a8|388770|Waddle Desktop with real windows for apps like Firefox
+waddle-system|0.40-1||eggs/waddle-system-0.40-1.egg|b71bfc6df88e76b6c67870692f9e8d5155b728863689bde043219ce21ed8af54|29817321|Waddle Linux itself (kernel and system)
 wayland|1.22.0-1|glibc,libffi,expat|eggs/wayland-1.22.0-1.egg|e14734028478e571dbb7157eca07cbb3cb4969809a44fd0e7bf6b252ed6dfc30|123593|Wayland: how apps put windows on the screen
 wifi-firmware|20240318-1||eggs/wifi-firmware-20240318-1.egg|b6255f7411d038bdb5b24c517d540a2efe137e84a490cd9e8983fe64108566f6|73936510|Firmware for Wi-Fi cards and USB Wi-Fi adapters
 wlroots|0.17.1-2|glibc,mesa,libglvnd,wayland,libdrm,libinput,libxkbcommon,pixman,seatd,libdisplay-info,libudev-zero,hwdata|eggs/wlroots-0.17.1-2.egg|1f935d25ad7ebd85e740a8432b54ee9b357b7d7be048e8c72713ec0a7d156d9b|373830|Wayland window system library (wlroots)
