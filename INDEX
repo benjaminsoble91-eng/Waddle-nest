@@ -12,6 +12,7 @@ cmatrix|2.0-1||eggs/cmatrix-2.0-1.egg|e5841bb8afcdffd31632560926bc1067a8f0cbe8dd
 curl|8.10.1-1|ca-certificates|eggs/curl-8.10.1-1.egg|4b2ec694e66b91dae35eb5014ab1eae4254293fb7e3c701161eeaaad5e60c70f|2853987|curl: download files over the internet, with real certificate checks
 dbus|1.14.10-1|glibc,expat|eggs/dbus-1.14.10-1.egg|97f8e62332a1652cec06679663db753b4598da772d3d9832a5a9e759bc33c4ac|312883|Message bus apps use to talk to each other (D-Bus)
 expat|2.6.1-1|glibc|eggs/expat-2.6.1-1.egg|b4d994e9c3945d40e17bfe05c7d16250a95ba5a230766d5f2bff8a94e3e501a6|67375|XML parser library (Expat)
+ffmpeg|6.1.1-2|glibc,zlib,libasound|eggs/ffmpeg-6.1.1-2.egg|1cd8f486a6bc47095b5d8ab55ffb49c82ebf053f183f70021aa573bc7e144cb6|10179951|Video and audio codecs (FFmpeg libraries)
 firefox|1.0-4|waddle-desktop,apulse,glibc,glibc-locales,gcc-runtime,libasound,gtk3,dbus,libxtst,libxcomposite,libxdamage,libxrandr,libxcursor,libxinerama,libx11,libxcb,libxext,libxfixes,libxi,libxrender,at-spi2-core,adwaita-icon-theme,hicolor-icon-theme,fonts-dejavu,fontconfig,cage,curl,ca-certificates|eggs/firefox-1.0-4.egg|15e14d9bfbc473db21c13a590bc62d59e6f3342b41c717b28c6e12186c118bd0|1727|Firefox web browser (run firefox-setup after installing to get it from Mozilla)
 fontconfig|2.15.0-1|glibc,freetype,expat|eggs/fontconfig-2.15.0-1.egg|63e4a958384bc41477e2ed7b4c86e335f95908fbc191637715848b92da93041e|195958|Font finding and configuration (Fontconfig)
 fonts-dejavu|2.37-1||eggs/fonts-dejavu-2.37-1.egg|ebe5f038e2ca1526aedf1711b8b849405aa3525483756ffab683de0c28a95360|5450309|DejaVu fonts (Sans, Serif and Mono) for desktop apps
@@ -58,8 +59,8 @@ libxrandr|1.5.2-1|glibc,libxext,libxrender|eggs/libxrandr-1.5.2-1.egg|cc507ff8a7
 libxrender|0.9.10-1|glibc,libx11|eggs/libxrender-0.9.10-1.egg|b9700621d821f4fc9d022969a018cc1e60624de9376b038bb85456e10aa2ff93|18035|X Render extension library
 libxtst|1.2.3-1|glibc,libxi|eggs/libxtst-1.2.3-1.egg|04c1de68af093994155fef108e06fd0a4f44c84cbfa4da654e05a44a41a75c19|9874|X Record/Test extension library
 lua|5.4.7-2||eggs/lua-5.4.7-2.egg|0aad2d347401ffc06400fec5f59e481bd0ee288a49c567b0f6abb53494974466|666144|Lua: a small, fast programming language
+mpv|0.37.0-1|glibc,ffmpeg,libass,libplacebo,libasound,wayland,libxkbcommon,zlib,freetype,fribidi,harfbuzz,fontconfig|eggs/mpv-0.37.0-1.egg|5f1352975db87b146f924089c2cb85aa4fa4cfb1fe850277d98494e663245e87|823936|Video and music player (mpv)
 mtdev|1.1.6-1|glibc|eggs/mtdev-1.1.6-1.egg|155eac6b9930763382356725955eae022c40c74806e33d419c0ff9c75fa87919|12685|Multitouch library (mtdev)
-mtpaint|3.50-1|glibc,gtk3,libpng,zlib|eggs/mtpaint-3.50-1.egg|4dbccb036d3ce6fd834304bfc8d9de8e8bc339581746a0f0fcb5c5a6dd4a17c7|433955|Image editor: paint and edit pictures
 pango|1.52.1-1|glibc,glib,harfbuzz,cairo,fontconfig,fribidi|eggs/pango-1.52.1-1.egg|aefae97f155af09ee91c4efbc6df83ced82eb10138fa7a2b1c934a724f0e0d14|281996|Text layout library (Pango)
 pcre2|10.42-1|glibc|eggs/pcre2-10.42-1.egg|61dea2d7d6d7eebc5ee4f7dc3744c0f0a61cae01e9d761b4ab1dfa6e19bb943b|782641|Regular expressions library (PCRE2)
 pipfetch|1.0-1||eggs/pipfetch-1.0-1.egg|64939237d72978864863e3b01a0582a224acbfb42c8337dc1405fdd2f94419c3|1524|Pip shows your system info (Waddle's own fetch tool)
@@ -67,8 +68,8 @@ pixman|0.42.2-1|glibc|eggs/pixman-0.42.2-1.egg|4433821c0f250034f03b37e94353285a7
 seatd|0.8.0-1|glibc|eggs/seatd-0.8.0-1.egg|bf374b8f9907bbe6765a5e63ca94b5c4535e333243ad28a9cb3549623716a9d6|46730|Seat manager: lets your apps use the screen and input safely (seatd)
 sl|5.02-1||eggs/sl-5.02-1.egg|ef13e10b7d0e70747e6ec406f9a50cae61a6d47fd68c4a40fc1fb026a5f603d9|507887|A steam locomotive runs across your screen when you type sl instead of ls
 tree|2.2.1-1||eggs/tree-2.2.1-1.egg|0c1f03e441e769d14f20f947da503ba4cbced760e0d7bb6422d456cfe34e9b8d|513916|Show folders and files as a tree
-waddle-desktop|1.0-16|glibc,wlroots,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus|eggs/waddle-desktop-1.0-16.egg|ebae10c9b2cf96d9e990bc79e8f503edc5fecc7e294ec371e94f1fa1aaf7a345|350483|Waddle Desktop with real windows for apps like Firefox
-waddle-system|0.21-1||eggs/waddle-system-0.21-1.egg|04e10187fdd41ea04ee37c5413d45ccf5ea7abfec04a90ecf4dc9d57d8b50e37|21650326|Waddle Linux itself (kernel and system)
+waddle-desktop|1.0-17|glibc,wlroots,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-17.egg|5b5749ac8742e28840fedd86650c284e48ec30af1d67bb593e0597523621db70|359484|Waddle Desktop with real windows for apps like Firefox
+waddle-system|0.22-1||eggs/waddle-system-0.22-1.egg|485e141ed6fba467e6adfd55501920cc81a5b369bb14272de6b2fbb681e91882|21883575|Waddle Linux itself (kernel and system)
 wayland|1.22.0-1|glibc,libffi,expat|eggs/wayland-1.22.0-1.egg|e14734028478e571dbb7157eca07cbb3cb4969809a44fd0e7bf6b252ed6dfc30|123593|Wayland: how apps put windows on the screen
 wlroots|0.17.1-1|glibc,wayland,libdrm,libinput,libxkbcommon,pixman,seatd,libdisplay-info,libudev-zero,hwdata|eggs/wlroots-0.17.1-1.egg|71386c18f02f73062a0f42daad6ac50ef992f444bdac883c468bc079c69d3fd9|351559|Wayland window system library (wlroots)
 xkeyboard-config|2.41-1|glibc|eggs/xkeyboard-config-2.41-1.egg|24ae62115fefb24cf087db46b7019218bd82f351cb6f71d41246f0b6fb1bfd9b|559150|Keyboard layouts (xkeyboard-config)

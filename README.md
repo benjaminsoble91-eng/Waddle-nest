@@ -75,6 +75,7 @@ wasn't shut down cleanly. It only writes inside its own file or partition.
 Click **Settings** on the desktop (or in Pip's menu in the corner). Changes apply right away and are kept:
 - **Time zone** (the clock, `date` in terminals, and file times), **12- or 24-hour clock**
 - **Wallpaper**: Pip's iceberg, Mint, Ocean, Sunset, Night or Lavender
+- **Pip on the desktop**: Pip stands on every wallpaper (turn him off here)
 - **Style**: Light or Dark (windows, taskbar, menus, and apps like Firefox follow it)
 - **Mouse speed** and **natural scrolling** (and tap-to-click on touchpads, always on)
 - **Volume** and the **login sound**, and whether **Pip says hi** when you log in
@@ -184,6 +185,12 @@ Any GTK 3 / Wayland app works the same way: `waddle-app <command>` (try `waddle-
 
 Sound in Firefox works through **apulse** (it gives Firefox the PulseAudio it asks for, on top of Waddle's ALSA
 sound). Not there yet: video is CPU-drawn (fine for browsing, heavy for 4K video).
+
+## Apps you can add
+
+`sudo waddle install l3afpad` (Text editor), `sudo waddle install galculator` (Calculator),
+`sudo waddle install mpv` (Videos and Music: open a video or song in Files). They show up in Apps.
+Apps can also show **notifications** in the top-right corner (try `notify-send "Hi" "from Pip"`).
 
 ## Getting apps: eggs from the Nest
 
