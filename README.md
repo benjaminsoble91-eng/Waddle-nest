@@ -181,8 +181,8 @@ with the CPU, so it works on any graphics card. The simple built-in desktop stay
 runs if the windowed one can't start (or add `waddle.fbdesktop` to the boot options).
 Any GTK 3 / Wayland app works the same way: `waddle-app <command>` (try `waddle-app gtk3-widget-factory`).
 
-Not there yet: video is CPU-drawn (fine for browsing, heavy for 4K video), and Firefox sound needs
-PulseAudio/PipeWire, which isn't in the Nest yet.
+Sound in Firefox works through **apulse** (it gives Firefox the PulseAudio it asks for, on top of Waddle's ALSA
+sound). Not there yet: video is CPU-drawn (fine for browsing, heavy for 4K video).
 
 ## Getting apps: eggs from the Nest
 
