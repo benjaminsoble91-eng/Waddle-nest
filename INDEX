@@ -69,8 +69,8 @@ pixman|0.42.2-1|glibc|eggs/pixman-0.42.2-1.egg|4433821c0f250034f03b37e94353285a7
 seatd|0.8.0-1|glibc|eggs/seatd-0.8.0-1.egg|bf374b8f9907bbe6765a5e63ca94b5c4535e333243ad28a9cb3549623716a9d6|46730|Seat manager: lets your apps use the screen and input safely (seatd)
 sl|5.02-1||eggs/sl-5.02-1.egg|ef13e10b7d0e70747e6ec406f9a50cae61a6d47fd68c4a40fc1fb026a5f603d9|507887|A steam locomotive runs across your screen when you type sl instead of ls
 tree|2.2.1-1||eggs/tree-2.2.1-1.egg|0c1f03e441e769d14f20f947da503ba4cbced760e0d7bb6422d456cfe34e9b8d|513916|Show folders and files as a tree
-waddle-desktop|1.0-30|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-30.egg|62344d0ecdb7212d3f0d7d42d8f2c4e9f382748aa1d86472d0376fd8d35a38ad|386121|Waddle Desktop with real windows for apps like Firefox
-waddle-system|0.37-1||eggs/waddle-system-0.37-1.egg|47c7ef9377a4137f6f4cc78eb417ddb98dd071d0a2ac2cb7f3f72bc4b4f34f64|29814992|Waddle Linux itself (kernel and system)
+waddle-desktop|1.0-31|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-31.egg|21fc67ec559587f83177f585be703a3cad46eb7a5daa0eb6aedb5d1ec5332dcb|386136|Waddle Desktop with real windows for apps like Firefox
+waddle-system|0.38-1||eggs/waddle-system-0.38-1.egg|45e79b92e113f5bfa3d1796e1639e099b082559f9750df8771e2307b175c21d0|29815167|Waddle Linux itself (kernel and system)
 wayland|1.22.0-1|glibc,libffi,expat|eggs/wayland-1.22.0-1.egg|e14734028478e571dbb7157eca07cbb3cb4969809a44fd0e7bf6b252ed6dfc30|123593|Wayland: how apps put windows on the screen
 wifi-firmware|20240318-1||eggs/wifi-firmware-20240318-1.egg|b6255f7411d038bdb5b24c517d540a2efe137e84a490cd9e8983fe64108566f6|73936510|Firmware for Wi-Fi cards and USB Wi-Fi adapters
 wlroots|0.17.1-2|glibc,mesa,libglvnd,wayland,libdrm,libinput,libxkbcommon,pixman,seatd,libdisplay-info,libudev-zero,hwdata|eggs/wlroots-0.17.1-2.egg|1f935d25ad7ebd85e740a8432b54ee9b357b7d7be048e8c72713ec0a7d156d9b|373830|Wayland window system library (wlroots)
