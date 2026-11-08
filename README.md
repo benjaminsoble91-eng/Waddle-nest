@@ -77,6 +77,7 @@ Click **Settings** on the desktop (or in Pip's menu in the corner). Changes appl
 - **Wallpaper**: Pip's iceberg, Mint, Ocean, Sunset, Night or Lavender
 - **Mouse speed** and **natural scrolling** (and tap-to-click on touchpads, always on)
 - **Volume** and the **login sound**
+- **Lock the screen** after 5 to 60 minutes of not using it (or only when you choose: Super+L or Lock in the menu)
 
 They're stored in `/etc/waddle/desktop.conf` (and the time zone in `/etc/waddle/timezone`).
 
@@ -105,6 +106,7 @@ apps resize from their bottom-right corner.
 | Super+Left / Super+Right | fill the left / right half of the screen |
 | Super+D | show the desktop (again to bring the windows back) |
 | Super+I | Settings |
+| Super+L | lock the screen (your password unlocks it; your windows stay open) |
 | Super+E | About Waddle |
 | PrintScreen or Super+Shift+S | screenshot, saved as a PNG in your Pictures folder |
 | Volume keys | volume up, down, mute |
