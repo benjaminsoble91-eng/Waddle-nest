@@ -76,7 +76,6 @@ Click **Settings** on the desktop (or in Pip's menu in the corner). Changes appl
 - **Time zone** (the clock, `date` in terminals, and file times), **12- or 24-hour clock**
 - **Wallpaper**: Pip's iceberg, Mint, Ocean, Sunset, Night or Lavender
 - **Pip on the desktop**: Pip stands on every wallpaper (turn him off here)
-- **Pip moves around**: Pip breathes and has little clumsy moments (wobbles, hops, near-trips); click him to make him do one
 - **Graphics acceleration**: on Intel graphics the graphics card draws (Mesa's iris driver); Off makes the CPU draw
 - **Style**: Light or Dark (windows, taskbar, menus, and apps like Firefox follow it)
 - **Mouse speed** and **natural scrolling** (and tap-to-click on touchpads, always on)
