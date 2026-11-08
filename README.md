@@ -109,6 +109,17 @@ Pip (bottom left) opens the menu; right-click the desktop for a quick menu. Each
 Next to the clock: the **network** icon (click it to see your connection and address) and the **volume** icon
 (click to mute, scroll on it to change the volume).
 
+## Under the hood
+
+- **Sleep**: Pip's menu > Sleep (or the sleep key). The screen locks first; your password wakes it.
+- **Clock**: set from the internet (NTP) once the network is up, and saved to the computer's clock (UTC).
+- **Compressed memory**: half your RAM's size of zram swap, so memory filling up slows things down instead of
+  crashing apps. (Turn off: create `/etc/waddle/no-zram`.)
+- **Firewall**: nothing can connect in from the network unless you allow it. `firewall` shows it,
+  `sudo firewall allow 8080` opens a port, `sudo firewall deny 8080` closes it, `sudo firewall off|on`.
+- **Undo an app update**: `sudo waddle rollback <egg>` goes back to the version before its last update and keeps it
+  there; `sudo waddle unhold <egg>` lets it update again.
+
 ## Keyboard shortcuts
 
 | Keys | What it does |
