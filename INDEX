@@ -1,0 +1,67 @@
+# Waddle Nest index — name|version|deps|file|sha256|size|description
+adwaita-icon-theme|46.0-1|glibc,hicolor-icon-theme,gtk3|eggs/adwaita-icon-theme-46.0-1.egg|4b34734a99895702a9d26679a4e9505fd8384f000977e92558d14a9eb0a5ecbf|1429074|Icons for GTK apps (Adwaita)
+alsa-utils|1.2.12-1||eggs/alsa-utils-1.2.12-1.egg|a2b6f64963368833c5dd969b04ecef8a467ce9bef56639721ce64445d5aaa8b0|12155058|Sound tools: alsamixer volume control, aplay, speaker-test
+at-spi2-core|2.52.0-1|glibc,dbus,glib,libxi,libxtst,libxml2|eggs/at-spi2-core-2.52.0-1.egg|091cb35b6764b622828f4c1244fc81c3f6dd8a3610d5afebce7209795af2c8d2|535942|Accessibility libraries (ATK, AT-SPI)
+bash|5.3-1||eggs/bash-5.3-1.egg|1e8534997f6861d21dc334183b5e1a4c30b1a7ef11465adebd9e0c52b39c16dc|1215866|Bash: the GNU shell most Linux tools and scripts expect
+ca-certificates|2026.10.23-1||eggs/ca-certificates-2026.10.23-1.egg|e96b23940c6337e5e41a7aeb8a055a9f25446cd9b5afca2533d3b204e409b47b|130208|Trusted certificate authorities (Mozilla's list, via certifi) for secure downloads
+cage|0.1.5+20240127-1|glibc,wlroots|eggs/cage-0.1.5+20240127-1.egg|d9d535c95c0e4a35fca276e24aa41a6e03b1c127524bfc9f5d76cfc2befc643f|19572|Cage: runs one Wayland app full screen (how Waddle shows Firefox)
+cairo|1.18.0-1|glibc,pixman,fontconfig,freetype,libpng,libx11,libxext,libxrender,libxcb,glib,zlib|eggs/cairo-1.18.0-1.egg|013ee6146eb154ca9bf99cb33fd77dc54c9ced33761085dbfafba91cf6d01d4a|744502|2D graphics library (cairo)
+claude-code|1.0-4|glibc,bash,curl,ca-certificates|eggs/claude-code-1.0-4.egg|ee602a87b22ca223165e6a7f89109c89c7fee12a0ec3085535eaf312998f74f0|5817|Get ready for Claude Code (Pip's look and personality); then run claude-code-setup
+cmatrix|2.0-1||eggs/cmatrix-2.0-1.egg|e5841bb8afcdffd31632560926bc1067a8f0cbe8dd463f5f1b48bdbf333fee81|540246|The falling green code from The Matrix, in your terminal
+curl|8.10.1-1|ca-certificates|eggs/curl-8.10.1-1.egg|4b2ec694e66b91dae35eb5014ab1eae4254293fb7e3c701161eeaaad5e60c70f|2853987|curl: download files over the internet, with real certificate checks
+dbus|1.14.10-1|glibc,expat|eggs/dbus-1.14.10-1.egg|97f8e62332a1652cec06679663db753b4598da772d3d9832a5a9e759bc33c4ac|312883|Message bus apps use to talk to each other (D-Bus)
+expat|2.6.1-1|glibc|eggs/expat-2.6.1-1.egg|b4d994e9c3945d40e17bfe05c7d16250a95ba5a230766d5f2bff8a94e3e501a6|67375|XML parser library (Expat)
+firefox|1.0-2|glibc,glibc-locales,gcc-runtime,libasound,gtk3,dbus,libxtst,libxcomposite,libxdamage,libxrandr,libxcursor,libxinerama,libx11,libxcb,libxext,libxfixes,libxi,libxrender,at-spi2-core,adwaita-icon-theme,hicolor-icon-theme,fonts-dejavu,fontconfig,cage,curl,ca-certificates|eggs/firefox-1.0-2.egg|2028446568d2b5d2acd2d2bf402235cb7024d52cf6812bb1056a78c234a03454|1711|Firefox web browser (run firefox-setup after installing to get it from Mozilla)
+fontconfig|2.15.0-1|glibc,freetype,expat|eggs/fontconfig-2.15.0-1.egg|63e4a958384bc41477e2ed7b4c86e335f95908fbc191637715848b92da93041e|195958|Font finding and configuration (Fontconfig)
+fonts-dejavu|2.37-1||eggs/fonts-dejavu-2.37-1.egg|ebe5f038e2ca1526aedf1711b8b849405aa3525483756ffab683de0c28a95360|5450309|DejaVu fonts (Sans, Serif and Mono) for desktop apps
+freetype|2.13.2-1|glibc,zlib,libpng|eggs/freetype-2.13.2-1.egg|10785f319c0a92e6093d025f44af3349365854d15ee5302ae7697d4b0895dec8|379403|Font rendering library (FreeType)
+fribidi|1.0.13-1|glibc|eggs/fribidi-1.0.13-1.egg|ae3f2093026090dc1dcb1ef45ae531202db54d3d4febd8c8c5a1bb836705f992|23152|Right-to-left text library (FriBidi)
+gcc-runtime|13.2.0-1|glibc|eggs/gcc-runtime-13.2.0-1.egg|ab4d8dcede6a798c8d5f107837f9e8bbffd9f6af58daed2528645c6185c7e966|942645|C++ runtime libraries (libstdc++, libgcc_s) from GCC
+gdk-pixbuf|2.42.10-1|glibc,glib,libpng|eggs/gdk-pixbuf-2.42.10-1.egg|4143372b9b300b3dc3f704baa3256f0de20224d801f63f696c7d55e4da45b442|688420|Image loading library (GdkPixbuf)
+glibc-locales|2.40-1|glibc|eggs/glibc-locales-2.40-1.egg|dded54aba6b91bf8293caa366510cc16d95aaaa6418bf465917a6e8e83032c31|687769|UTF-8 language settings (C.UTF-8, en_US.UTF-8) for desktop apps
+glibc|2.40-1||eggs/glibc-2.40-1.egg|9062635e9ecdb64b2059bbec3b9b4b36361372bdebee663c1056a64584d5c60c|5975693|GNU C library: runs standard Linux programs
+glib|2.80.0-1|glibc,libffi,pcre2,zlib|eggs/glib-2.80.0-1.egg|09772c5ba9eca5e3af82cc9340b4196c076eae50b5c1db2344966bf4f3aa7e79|1920144|GLib: the base library of GTK and GNOME
+gtk3|3.24.41-1|glibc,glib,pango,cairo,gdk-pixbuf,at-spi2-core,libepoxy,wayland,libxkbcommon,libx11,libxi,libxrandr,libxcursor,libxdamage,libxcomposite,libxinerama,libxext,libxfixes,fribidi,harfbuzz,xkeyboard-config,hicolor-icon-theme,fonts-dejavu|eggs/gtk3-3.24.41-1.egg|71d11280b783501d6b63db6f4b3443129d57023779ac219dd9d0062c10468ea2|15046228|GTK 3: the toolkit Firefox and many desktop apps are made with
+harfbuzz|8.3.0-2|glibc,glib,freetype,gcc-runtime|eggs/harfbuzz-8.3.0-2.egg|4cecf1bda77fbd583e1ed5f8cbcf56036f71b9349b4fdc540c5515f6b568b6df|1193033|Text shaping engine (HarfBuzz)
+hicolor-icon-theme|0.17-1|glibc|eggs/hicolor-icon-theme-0.17-1.egg|c9faaa80729bc832550a63b35ce34965c52054d839bdcfe09496e932442c3717|10581|Base icon theme
+htop|3.3.0-1||eggs/htop-3.3.0-1.egg|923cd63cfcea86237ff52056a6d3789726ad67e94053aa78bc4292bbcda8e2ca|751853|Interactive process viewer: see what's running and how busy your PC is
+hwdata|0.379-1|glibc|eggs/hwdata-0.379-1.egg|633e60b452cda716e9d6083173ec3fb1a170f7dbc56a8c8077638c2fbd715ce3|2378366|Hardware ID database (hwdata)
+libasound|1.2.12-1|glibc,alsa-utils|eggs/libasound-1.2.12-1.egg|72af724fa7915b6f3ad025ec6844095933ecc512f52c17164fea4497f0c474b5|357863|Linux sound library (ALSA), shared, for Firefox and other apps
+libdisplay-info|0.1.1-1|glibc,hwdata|eggs/libdisplay-info-0.1.1-1.egg|e7dfc7ef9ac8bf209755970a8d2010836ffcebcdcb09b5d8c3e4b6bfea36ae27|95602|Screen information library (libdisplay-info)
+libdrm|2.4.120-1|glibc|eggs/libdrm-2.4.120-1.egg|8f1d661911fe6465639a531b9acb724c0153d547fcd2f2b57cab8204d1e3efe4|38527|Graphics card access library (libdrm)
+libepoxy|1.5.10-1|glibc,libx11,libglvnd|eggs/libepoxy-1.5.10-1.egg|b6a3be8c391c9ecbe13118b295f67b15af75dbace44d05746d61510b959137f4|260988|OpenGL function loader (libepoxy)
+libevdev|1.13.1-1|glibc|eggs/libevdev-1.13.1-1.egg|a051d0e9595cde966f71677b13505c0d43c7554c895cc0c71e9bde935ad176e4|47962|Input device library (libevdev)
+libffi|3.4.6-1|glibc|eggs/libffi-3.4.6-1.egg|ede14fd34dea60acc4ac495ad557395137cf203ec7703e622a84e7df088ed18d|22351|Library for calling functions dynamically (libffi)
+libglvnd|1.7.0-1|glibc,libx11,libxext|eggs/libglvnd-1.7.0-1.egg|72655d37f7a9c034d050021f5054bf681cd93d8c6a64f827001f3b357eb0ad8e|358494|OpenGL/EGL dispatch libraries and headers (libglvnd; apps fall back to CPU drawing without a GPU driver)
+libinput|1.25.0-1|glibc,libevdev,mtdev,libudev-zero|eggs/libinput-1.25.0-1.egg|0cf0225c3b914a912586d642ec299fe0a6d6d2a22c19ed5c8081628dceaa120a|445864|Mouse, keyboard and touchpad handling (libinput)
+libpng|1.6.43-1|glibc,zlib|eggs/libpng-1.6.43-1.egg|a8eac90445a1e305208946d582c00180ef1d8ddbd04c691d3d3b55370b1507d5|134347|PNG image library
+libudev-zero|1.0.3-1|glibc|eggs/libudev-zero-1.0.3-1.egg|2f0766daed9d3766aa02e50abfe9d0c79521b228c3a5b65a7ec2023200a2b152|11925|Device discovery library without a udev daemon (libudev-zero)
+libx11|1.8.7-1|glibc,libxcb|eggs/libx11-1.8.7-1.egg|68c7e408705cf601290e1a0feab01e79b46da2076243d5266eaf245c2eecc398|947122|X11 client library (libX11)
+libxau|1.0.9-1|glibc|eggs/libxau-1.0.9-1.egg|61192c7d0241330a90adbd49c6c236f89aaf315472b783d6db6cd6e6be276dc7|5198|X11 authorisation library
+libxcb|1.15-1|glibc,libxau,libxdmcp|eggs/libxcb-1.15-1.egg|8c1faa54ecaf4ea2d1bda04205dce5e85a6d363e3b326c94746cf13f4dc7b371|241832|X11 C bindings (XCB)
+libxcomposite|0.4.5-1|glibc,libxfixes|eggs/libxcomposite-0.4.5-1.egg|c93def8e55a1539c9501c3bd1cb2df5f7c083e18ba9127d34c2cc020fefd28f5|3913|X Composite extension library
+libxcursor|1.2.1-1|glibc,libxrender,libxfixes|eggs/libxcursor-1.2.1-1.egg|582603385fe1b697381d883fd5cc774319d7866fa0a21f6fd4fa514d097db782|19834|X cursor library
+libxdamage|1.1.6-1|glibc,libxfixes|eggs/libxdamage-1.1.6-1.egg|37ac35197cd4dd0777d56de603adfa0f34471d56e0a776d9d71a7c16cc48b7fd|4128|X Damage extension library
+libxdmcp|1.1.3-1|glibc|eggs/libxdmcp-1.1.3-1.egg|01638c5b5dce4a34cb501a9d93462dee760d7eb12890273d35e32acb009627de|9006|X11 display manager protocol library
+libxext|1.3.4-1|glibc,libx11|eggs/libxext-1.3.4-1.egg|c35b0f66d942e105cac0ad8a3b93067ac177bb98a948da707e1c6e5dec6eca62|27816|X11 extensions library
+libxfixes|6.0.0-1|glibc,libx11|eggs/libxfixes-6.0.0-1.egg|74e1c4144f1a1f5d05c40fb9d7d18095d62f50582a4b7b823a7ffb3e3155ed75|8491|X Fixes extension library
+libxinerama|1.1.4-1|glibc,libxext|eggs/libxinerama-1.1.4-1.egg|54ebb0c3ec72ba6b87e6d02a92b932f47a3291b3e2c37ab728a815775c4888f0|3831|X Xinerama extension library
+libxi|1.8.1-1|glibc,libxext,libxfixes|eggs/libxi-1.8.1-1.egg|71e4a64907c76e918da8e86cc6939347bb4c04ad74aacf6ea8bf48ac5041213c|31313|X Input extension library
+libxkbcommon|1.6.0-1|glibc,libxcb,wayland,xkeyboard-config|eggs/libxkbcommon-1.6.0-1.egg|970c5d305d7697b1afe56f5106c286e5178f1901a6ebc59396bccc2eddc385d1|143914|Keyboard handling library (xkbcommon)
+libxml2|2.9.14-1|glibc,zlib|eggs/libxml2-2.9.14-1.egg|a0823defc11759db2d1c30644b5b25887888d927e70f38fafe98e02c20a70686|668338|XML library (libxml2)
+libxrandr|1.5.2-1|glibc,libxext,libxrender|eggs/libxrandr-1.5.2-1.egg|cc507ff8a795795cc702d75a07c13881f43bdfc3150bdac371a24a50bd0d0303|17537|X Resize and Rotate extension library
+libxrender|0.9.10-1|glibc,libx11|eggs/libxrender-0.9.10-1.egg|b9700621d821f4fc9d022969a018cc1e60624de9376b038bb85456e10aa2ff93|18035|X Render extension library
+libxtst|1.2.3-1|glibc,libxi|eggs/libxtst-1.2.3-1.egg|04c1de68af093994155fef108e06fd0a4f44c84cbfa4da654e05a44a41a75c19|9874|X Record/Test extension library
+lua|5.4.7-2||eggs/lua-5.4.7-2.egg|0aad2d347401ffc06400fec5f59e481bd0ee288a49c567b0f6abb53494974466|666144|Lua: a small, fast programming language
+mtdev|1.1.6-1|glibc|eggs/mtdev-1.1.6-1.egg|155eac6b9930763382356725955eae022c40c74806e33d419c0ff9c75fa87919|12685|Multitouch library (mtdev)
+pango|1.52.1-1|glibc,glib,harfbuzz,cairo,fontconfig,fribidi|eggs/pango-1.52.1-1.egg|aefae97f155af09ee91c4efbc6df83ced82eb10138fa7a2b1c934a724f0e0d14|281996|Text layout library (Pango)
+pcre2|10.42-1|glibc|eggs/pcre2-10.42-1.egg|61dea2d7d6d7eebc5ee4f7dc3744c0f0a61cae01e9d761b4ab1dfa6e19bb943b|782641|Regular expressions library (PCRE2)
+pipfetch|1.0-1||eggs/pipfetch-1.0-1.egg|64939237d72978864863e3b01a0582a224acbfb42c8337dc1405fdd2f94419c3|1524|Pip shows your system info (Waddle's own fetch tool)
+pixman|0.42.2-1|glibc|eggs/pixman-0.42.2-1.egg|4433821c0f250034f03b37e94353285a76670e08ebcf1b1799687aa53a909505|306963|Pixel drawing library (pixman)
+seatd|0.8.0-1|glibc|eggs/seatd-0.8.0-1.egg|bf374b8f9907bbe6765a5e63ca94b5c4535e333243ad28a9cb3549623716a9d6|46730|Seat manager: lets your apps use the screen and input safely (seatd)
+sl|5.02-1||eggs/sl-5.02-1.egg|ef13e10b7d0e70747e6ec406f9a50cae61a6d47fd68c4a40fc1fb026a5f603d9|507887|A steam locomotive runs across your screen when you type sl instead of ls
+tree|2.2.1-1||eggs/tree-2.2.1-1.egg|0c1f03e441e769d14f20f947da503ba4cbced760e0d7bb6422d456cfe34e9b8d|513916|Show folders and files as a tree
+wayland|1.22.0-1|glibc,libffi,expat|eggs/wayland-1.22.0-1.egg|e14734028478e571dbb7157eca07cbb3cb4969809a44fd0e7bf6b252ed6dfc30|123593|Wayland: how apps put windows on the screen
+wlroots|0.17.1-1|glibc,wayland,libdrm,libinput,libxkbcommon,pixman,seatd,libdisplay-info,libudev-zero,hwdata|eggs/wlroots-0.17.1-1.egg|71386c18f02f73062a0f42daad6ac50ef992f444bdac883c468bc079c69d3fd9|351559|Wayland window system library (wlroots)
+xkeyboard-config|2.41-1|glibc|eggs/xkeyboard-config-2.41-1.egg|24ae62115fefb24cf087db46b7019218bd82f351cb6f71d41246f0b6fb1bfd9b|559150|Keyboard layouts (xkeyboard-config)
+zlib|1.3-1|glibc|eggs/zlib-1.3-1.egg|42abe85c93310ddb419da1549c3c9bdd113ace15a4400e6d8fc5b5a0983e6cf2|52455|Compression library (zlib)
