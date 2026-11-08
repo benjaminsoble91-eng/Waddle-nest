@@ -112,6 +112,7 @@ Next to the clock: the **network** icon (click it to see your connection and add
 | Super+Left / Super+Right | fill the left / right half of the screen |
 | Super+D | show the desktop (again to bring the windows back) |
 | Super+A | Apps (everything you can open, and More apps) |
+| Super+F | Files (your folders; click a picture to view it) |
 | Super+I | Settings |
 | Super+L | lock the screen (your password unlocks it; your windows stay open) |
 | Super+E | About Waddle |
