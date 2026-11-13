@@ -30,6 +30,7 @@ harfbuzz|8.3.0-2|glibc,glib,freetype,gcc-runtime|eggs/harfbuzz-8.3.0-2.egg|4cecf
 hicolor-icon-theme|0.17-1|glibc|eggs/hicolor-icon-theme-0.17-1.egg|c9faaa80729bc832550a63b35ce34965c52054d839bdcfe09496e932442c3717|10581|Base icon theme
 htop|3.3.0-1||eggs/htop-3.3.0-1.egg|923cd63cfcea86237ff52056a6d3789726ad67e94053aa78bc4292bbcda8e2ca|751853|Interactive process viewer: see what's running and how busy your PC is
 hwdata|0.379-1|glibc|eggs/hwdata-0.379-1.egg|633e60b452cda716e9d6083173ec3fb1a170f7dbc56a8c8077638c2fbd715ce3|2378366|Hardware ID database (hwdata)
+iloader|1.0-1|glibc,usbmuxd,curl,ca-certificates,cage,waddle-desktop,gtk3,gdk-pixbuf,pango,cairo,harfbuzz,libepoxy,at-spi2-core,dbus,fontconfig,fonts-dejavu,libx11,libxcb,glib,libxkbcommon,mesa|eggs/iloader-1.0-1.egg|94f94f235de268d08b0a743ee89c3753d5285b60f03b734fa7d5c2a2f3462881|1647|iLoader - friendly iOS sideloader (SideStore & IPAs); opens as a window
 l3afpad|0.8.18.1.11-1|glibc,gtk3|eggs/l3afpad-0.8.18.1.11-1.egg|4e638bd03fea3ea155271f9f5f0c06e6ab60dc940778bfe44ba2db24d60d16de|159372|Text editor: simple and fast
 libasound|1.2.12-1|glibc,alsa-utils|eggs/libasound-1.2.12-1.egg|72af724fa7915b6f3ad025ec6844095933ecc512f52c17164fea4497f0c474b5|357863|Linux sound library (ALSA), shared, for Firefox and other apps
 libass|0.17.1-1|glibc,freetype,fribidi,harfbuzz,fontconfig|eggs/libass-0.17.1-1.egg|29a3bd27eef03a4d4b195fcf82ed8d9821bf492f82e60c50656f150499383a8e|101428|Subtitle renderer (libass)
@@ -76,8 +77,8 @@ sideloader|1.0-3|glibc,usbmuxd,libimobiledevice,curl|eggs/sideloader-1.0-3.egg|a
 sl|5.02-1||eggs/sl-5.02-1.egg|ef13e10b7d0e70747e6ec406f9a50cae61a6d47fd68c4a40fc1fb026a5f603d9|507887|A steam locomotive runs across your screen when you type sl instead of ls
 tree|2.2.1-1||eggs/tree-2.2.1-1.egg|0c1f03e441e769d14f20f947da503ba4cbced760e0d7bb6422d456cfe34e9b8d|513916|Show folders and files as a tree
 usbmuxd|1.1.1-1|glibc,libimobiledevice|eggs/usbmuxd-1.1.1-1.egg|4e456f9ab2750f86e79aca98ec8b782c0a9603bb73c92f7edf183c2ac42255a0|36246|USB multiplexer daemon for iPhones/iPads (run: sudo usbmuxd)
-waddle-desktop|1.0-38|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-38.egg|66ce99442d3827a00bf5bf65cd0359a0daf9ce1beb1f505d7f88a34ed4c2f99a|391028|Waddle Desktop with real windows for apps like Firefox
-waddle-system|0.48-1||eggs/waddle-system-0.48-1.egg|476bcbc1a5da7a7bb897109200b04477f4934912c9db366125cc3c1399b1b947|29827183|Waddle Linux itself (kernel and system)
+waddle-desktop|1.0-39|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-39.egg|f8247d2f39ae057424caf7edfeb1238af90a6fd0b36ff12de813907e2c315482|391312|Waddle Desktop with real windows for apps like Firefox
+waddle-system|0.49-1||eggs/waddle-system-0.49-1.egg|fd5e4b73e3eda3b617cd9ef5f3bc5806d6d6d30b9c246926e378001c4e523009|29830091|Waddle Linux itself (kernel and system)
 wayland|1.22.0-1|glibc,libffi,expat|eggs/wayland-1.22.0-1.egg|e14734028478e571dbb7157eca07cbb3cb4969809a44fd0e7bf6b252ed6dfc30|123593|Wayland: how apps put windows on the screen
 wifi-firmware|20240318-1||eggs/wifi-firmware-20240318-1.egg|b6255f7411d038bdb5b24c517d540a2efe137e84a490cd9e8983fe64108566f6|73936510|Firmware for Wi-Fi cards and USB Wi-Fi adapters
 wlroots|0.17.1-2|glibc,mesa,libglvnd,wayland,libdrm,libinput,libxkbcommon,pixman,seatd,libdisplay-info,libudev-zero,hwdata|eggs/wlroots-0.17.1-2.egg|1f935d25ad7ebd85e740a8432b54ee9b357b7d7be048e8c72713ec0a7d156d9b|373830|Wayland window system library (wlroots)
