@@ -246,6 +246,20 @@ cards the CPU draws. If the desktop ever stops unexpectedly, it restarts with th
 `sudo waddle install mpv` (Videos and Music: open a video or song in Files). They show up in Apps.
 Apps can also show **notifications** in the top-right corner (try `notify-send "Hi" "from Pip"`).
 
+## An iPod touch in a window (iPhone OS 3)
+
+`sudo waddle install ios3`, then click **iPod touch (iOS 3)** in Apps or type `ios3`. It's
+[QEMU-iOS](https://github.com/samhenrigold/qemu-ios) (tag `ipod-touch-2g-2026.08`), built from source for Waddle:
+an emulated iPod touch 2G that boots iPhone OS 3.1.3.
+
+The emulator is in the egg; the iPod's firmware is Apple's, so you bring your own. Put these in `~/ios3`:
+a `bootrom` file (the S5L8720 boot ROM), a `nor.bin` (the NOR image) and a `nand/` folder (iPhone OS 3.1.3, with
+`cs0`..`cs3` inside). `ios3 check` shows what's in place, and `/apps/share/doc/ios3/setup.md` is the emulator's
+guide to where each file comes from.
+
+Buttons: **F1** Home, **F2** Power (hold it, then slide to power off: that saves what you changed), **F3/F4**
+volume, **F5/F6** rotate. Click and drag is touch. No sound and no 3D games in this version of the emulator.
+
 ## Getting apps: eggs from the Nest
 
 Waddle has its own package system:
