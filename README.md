@@ -69,10 +69,11 @@ While looking, Waddle only *reads* drives (it doesn't even replay journals), so 
 wasn't shut down cleanly. It only writes inside its own file or partition.
 
 - `storage` (or **About Waddle**) shows whether saving is on and how much space is used.
-- **Need more room?** `sudo waddle install storage-grow`, then click **Grow Storage** in Apps or run
-  `sudo storage-grow 20G` (or just `storage-grow` and it asks). It makes Waddle's storage file bigger while Waddle
-  is running: nothing is erased, and the file still only takes up real room on the drive as you fill it.
-  `storage-grow status` shows the size now and how far it can grow. It can't be made smaller again.
+- **The Storage app** (in Apps, comes with Waddle since 0.51) does all of this without typing: it shows how full
+  Waddle is, **Turn saving on...** lets you pick a drive from a list, and **Make it bigger** is a slider plus a
+  **Grow storage** button. It asks for your password in a small dialog. Growing happens while Waddle runs: nothing is
+  erased, and the file still only takes up real room on the drive as you fill it. It can't be made smaller again.
+  (From a terminal: `sudo storage-grow 20G`, `storage-grow status`.)
 - Always shut down with **Power off**/**Restart** (menu or login screen) or `sudo poweroff`, not the power button, so storage
   is closed cleanly.
 - Don't hibernate NixOS and then boot Waddle; shut NixOS down normally first.
@@ -253,8 +254,7 @@ Apps can also show **notifications** in the top-right corner (try `notify-send "
 ## An iPod touch in a window (iPhone OS 3)
 
 Since Waddle 0.50 the **iPod touch (iOS 3)** app comes with Waddle: it installs itself in the background the first
-time you're online (with saving set up), then shows up in Apps. Click it, or type `ios3`. On older versions:
-`sudo waddle install ios3`. It's [QEMU-iOS](https://github.com/samhenrigold/qemu-ios) (tag `ipod-touch-2g-2026.08`),
+time you're online (with saving on), then shows up in Apps. Click it, or type `ios3`. It's [QEMU-iOS](https://github.com/samhenrigold/qemu-ios) (tag `ipod-touch-2g-2026.08`),
 built from source for Waddle: a pretend iPod touch 2G that runs iPhone OS 3.1.3.
 
 The window has two tabs:
