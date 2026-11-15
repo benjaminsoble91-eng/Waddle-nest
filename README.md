@@ -254,8 +254,7 @@ Apps can also show **notifications** in the top-right corner (try `notify-send "
 ## An iPod touch in a window (iPhone OS 3)
 
 Since Waddle 0.50 the **iPod touch (iOS 3)** app comes with Waddle: it installs itself in the background the first
-time you're online (with saving on), then shows up in Apps. Click it, or type `ios3`. It's [QEMU-iOS](https://github.com/samhenrigold/qemu-ios) (tag `ipod-touch-2g-2026.08`),
-built from source for Waddle: a pretend iPod touch 2G that runs iPhone OS 3.1.3.
+time you're online (with saving on), then shows up in Apps. Click it, or type `ios3`. It's [QEMU-iOS](https://github.com/samhenrigold/qemu-ios), built from source for Waddle.
 
 Since 0.52 there are two iPods to pick from with the buttons at the top: **iPhone OS 1** (the first iPod touch, 2007,
 iPhone OS 1.1) and **iPhone OS 3** (the second iPod touch, iPhone OS 3.1.3). Each has its own download button, its own
