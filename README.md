@@ -248,22 +248,24 @@ Apps can also show **notifications** in the top-right corner (try `notify-send "
 
 ## An iPod touch in a window (iPhone OS 3)
 
-`sudo waddle install ios3`, then click **iPod touch (iOS 3)** in Apps or type `ios3`. It's
-[QEMU-iOS](https://github.com/samhenrigold/qemu-ios) (tag `ipod-touch-2g-2026.08`), built from source for Waddle:
-an emulated iPod touch 2G that boots iPhone OS 3.1.3.
+Since Waddle 0.50 the **iPod touch (iOS 3)** app comes with Waddle: it installs itself in the background the first
+time you're online (with saving set up), then shows up in Apps. Click it, or type `ios3`. On older versions:
+`sudo waddle install ios3`. It's [QEMU-iOS](https://github.com/samhenrigold/qemu-ios) (tag `ipod-touch-2g-2026.08`),
+built from source for Waddle: a pretend iPod touch 2G that runs iPhone OS 3.1.3.
 
-The **iPod touch window** does everything, no commands needed: it shows which firmware pieces are in place,
-**Choose...** picks each one, **Start the iPod** opens the iPod in its own window, the button grid presses Home,
-Sleep/Wake, Hold Power, volume and rotate, and **Turn off** shuts the iPod down properly so what you changed is saved
-(**Force stop** is the pull-the-battery way).
+The window has two tabs:
+- **iPod**: three numbered steps. **1 Add the firmware** (a row per piece, **?** explains it, **Choose...** picks it),
+  **2 Turn it on** (**Start the iPod**, later **Turn off**, which shuts it down properly so what you changed is saved),
+  **3 Use it** (Home, Sleep/Wake, Hold Power, volume, rotate). The line at the top always says what to do next.
+- **Guide**: everything in plain words: what this is, the three pieces and where they come from, what you'll see
+  while it starts, touch and typing, turning off and saving, problems and fixes, and the terminal commands.
 
 The emulator is in the egg; the iPod's firmware is Apple's, so you bring your own: a boot ROM file (S5L8720), a NOR
-image and a NAND folder (iPhone OS 3.1.3, with `cs0`..`cs3` inside). They're kept in `~/ios3`. **Where do I get
-these?** in the window opens the emulator's guide (`/apps/share/doc/ios3/setup.md`).
+image and a NAND folder (iPhone OS 3.1.3, with `cs0`..`cs3` inside). They're kept in `~/ios3`.
 
 In the iPod's own window, click and drag is touch, and **F1** Home, **F2** Power, **F3/F4** volume, **F5/F6** rotate
 work too. From a terminal: `ios3 start`, `ios3 check`, `ios3 help`. No sound and no 3D games in this version of the
-emulator.
+emulator. Don't want the app? `sudo waddle remove ios3` (it stays removed), or create `/etc/waddle/no-addons`.
 
 ## Getting apps: eggs from the Nest
 
