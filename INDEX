@@ -80,7 +80,7 @@ storage-grow|2.0-2|glibc,gtk3,waddle-desktop|eggs/storage-grow-2.0-2.egg|d5010ad
 tree|2.2.1-1||eggs/tree-2.2.1-1.egg|0c1f03e441e769d14f20f947da503ba4cbced760e0d7bb6422d456cfe34e9b8d|513916|Show folders and files as a tree
 usbmuxd|1.1.1-1|glibc,libimobiledevice|eggs/usbmuxd-1.1.1-1.egg|4e456f9ab2750f86e79aca98ec8b782c0a9603bb73c92f7edf183c2ac42255a0|36246|USB multiplexer daemon for iPhones/iPads (run: sudo usbmuxd)
 waddle-desktop|1.0-39|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-39.egg|f8247d2f39ae057424caf7edfeb1238af90a6fd0b36ff12de813907e2c315482|391312|Waddle Desktop with real windows for apps like Firefox
-waddle-system|0.52-1||eggs/waddle-system-0.52-1.egg|cdafc0b924b2137af54e9594daa37595322d298da2cb385188f064a1740e9d8f|29825938|Waddle Linux itself (kernel and system)
+waddle-system|0.53-1||eggs/waddle-system-0.53-1.egg|9a335dffcee340a42d8d174d06b1a377246705ebffbbba7659ee5022b6485c9a|29819744|Waddle Linux itself (kernel and system)
 wayland|1.22.0-1|glibc,libffi,expat|eggs/wayland-1.22.0-1.egg|e14734028478e571dbb7157eca07cbb3cb4969809a44fd0e7bf6b252ed6dfc30|123593|Wayland: how apps put windows on the screen
 wifi-firmware|20240318-1||eggs/wifi-firmware-20240318-1.egg|b6255f7411d038bdb5b24c517d540a2efe137e84a490cd9e8983fe64108566f6|73936510|Firmware for Wi-Fi cards and USB Wi-Fi adapters
 wlroots|0.17.1-2|glibc,mesa,libglvnd,wayland,libdrm,libinput,libxkbcommon,pixman,seatd,libdisplay-info,libudev-zero,hwdata|eggs/wlroots-0.17.1-2.egg|1f935d25ad7ebd85e740a8432b54ee9b357b7d7be048e8c72713ec0a7d156d9b|373830|Wayland window system library (wlroots)
