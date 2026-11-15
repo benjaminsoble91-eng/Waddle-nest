@@ -254,17 +254,20 @@ time you're online (with saving set up), then shows up in Apps. Click it, or typ
 built from source for Waddle: a pretend iPod touch 2G that runs iPhone OS 3.1.3.
 
 The window has two tabs:
-- **iPod**: three numbered steps. **1 Add the firmware** (a row per piece, **?** explains it, **Choose...** picks it),
+- **iPod**: three numbered steps. **1 Add the firmware** (**Download them for me...** fetches all three pieces from
+  the emulator project's release page, checks them and puts them in place; or a row per piece, **?** explains it, **Choose...** picks your own),
   **2 Turn it on** (**Start the iPod**, later **Turn off**, which shuts it down properly so what you changed is saved),
   **3 Use it** (Home, Sleep/Wake, Hold Power, volume, rotate). The line at the top always says what to do next.
 - **Guide**: everything in plain words: what this is, the three pieces and where they come from, what you'll see
   while it starts, touch and typing, turning off and saving, problems and fixes, and the terminal commands.
 
-The emulator is in the egg; the iPod's firmware is Apple's, so you bring your own: a boot ROM file (S5L8720), a NOR
-image and a NAND folder (iPhone OS 3.1.3, with `cs0`..`cs3` inside). They're kept in `~/ios3`.
+The emulator is in the egg; the iPod's firmware is Apple's, so it isn't: a boot ROM file (S5L8720), a NOR image and a
+NAND folder (iPhone OS 3.1.3, with `cs0`..`cs3` inside), kept in `~/ios3`. The download button (or `ios3 fetch`) gets
+the set the emulator's author publishes on the project's release page (about 335 MB); it asks first, since downloading
+Apple's firmware is your choice, and it is never stored in the Nest.
 
 In the iPod's own window, click and drag is touch, and **F1** Home, **F2** Power, **F3/F4** volume, **F5/F6** rotate
-work too. From a terminal: `ios3 start`, `ios3 check`, `ios3 help`. No sound and no 3D games in this version of the
+work too. From a terminal: `ios3 start`, `ios3 fetch`, `ios3 check`, `ios3 help`. No sound and no 3D games in this version of the
 emulator. Don't want the app? `sudo waddle remove ios3` (it stays removed), or create `/etc/waddle/no-addons`.
 
 ## Getting apps: eggs from the Nest
