@@ -252,13 +252,18 @@ Apps can also show **notifications** in the top-right corner (try `notify-send "
 [QEMU-iOS](https://github.com/samhenrigold/qemu-ios) (tag `ipod-touch-2g-2026.08`), built from source for Waddle:
 an emulated iPod touch 2G that boots iPhone OS 3.1.3.
 
-The emulator is in the egg; the iPod's firmware is Apple's, so you bring your own. Put these in `~/ios3`:
-a `bootrom` file (the S5L8720 boot ROM), a `nor.bin` (the NOR image) and a `nand/` folder (iPhone OS 3.1.3, with
-`cs0`..`cs3` inside). `ios3 check` shows what's in place, and `/apps/share/doc/ios3/setup.md` is the emulator's
-guide to where each file comes from.
+The **iPod touch window** does everything, no commands needed: it shows which firmware pieces are in place,
+**Choose...** picks each one, **Start the iPod** opens the iPod in its own window, the button grid presses Home,
+Sleep/Wake, Hold Power, volume and rotate, and **Turn off** shuts the iPod down properly so what you changed is saved
+(**Force stop** is the pull-the-battery way).
 
-Buttons: **F1** Home, **F2** Power (hold it, then slide to power off: that saves what you changed), **F3/F4**
-volume, **F5/F6** rotate. Click and drag is touch. No sound and no 3D games in this version of the emulator.
+The emulator is in the egg; the iPod's firmware is Apple's, so you bring your own: a boot ROM file (S5L8720), a NOR
+image and a NAND folder (iPhone OS 3.1.3, with `cs0`..`cs3` inside). They're kept in `~/ios3`. **Where do I get
+these?** in the window opens the emulator's guide (`/apps/share/doc/ios3/setup.md`).
+
+In the iPod's own window, click and drag is touch, and **F1** Home, **F2** Power, **F3/F4** volume, **F5/F6** rotate
+work too. From a terminal: `ios3 start`, `ios3 check`, `ios3 help`. No sound and no 3D games in this version of the
+emulator.
 
 ## Getting apps: eggs from the Nest
 
