@@ -257,6 +257,11 @@ Since Waddle 0.50 the **iPod touch (iOS 3)** app comes with Waddle: it installs 
 time you're online (with saving on), then shows up in Apps. Click it, or type `ios3`. It's [QEMU-iOS](https://github.com/samhenrigold/qemu-ios) (tag `ipod-touch-2g-2026.08`),
 built from source for Waddle: a pretend iPod touch 2G that runs iPhone OS 3.1.3.
 
+Since 0.52 there are two iPods to pick from with the buttons at the top: **iPhone OS 1** (the first iPod touch, 2007,
+iPhone OS 1.1) and **iPhone OS 3** (the second iPod touch, iPhone OS 3.1.3). Each has its own download button, its own
+firmware (`~/ios1`, `~/ios3`) and its own saved changes. The iPhone OS 1 iPod falls asleep after about a minute without
+a touch and can't be woken yet: Force stop, then start it again.
+
 The window has two tabs:
 - **iPod**: three numbered steps. **1 Add the firmware** (**Download them for me...** fetches all three pieces from
   the emulator project's release page, checks them and puts them in place; or a row per piece, **?** explains it, **Choose...** picks your own),
