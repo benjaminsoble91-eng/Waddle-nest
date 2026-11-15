@@ -69,6 +69,10 @@ While looking, Waddle only *reads* drives (it doesn't even replay journals), so 
 wasn't shut down cleanly. It only writes inside its own file or partition.
 
 - `storage` (or **About Waddle**) shows whether saving is on and how much space is used.
+- **Need more room?** `sudo waddle install storage-grow`, then click **Grow Storage** in Apps or run
+  `sudo storage-grow 20G` (or just `storage-grow` and it asks). It makes Waddle's storage file bigger while Waddle
+  is running: nothing is erased, and the file still only takes up real room on the drive as you fill it.
+  `storage-grow status` shows the size now and how far it can grow. It can't be made smaller again.
 - Always shut down with **Power off**/**Restart** (menu or login screen) or `sudo poweroff`, not the power button, so storage
   is closed cleanly.
 - Don't hibernate NixOS and then boot Waddle; shut NixOS down normally first.

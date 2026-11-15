@@ -76,6 +76,7 @@ ramdisk-tools|1.0-3|glibc,gaster,curl|eggs/ramdisk-tools-1.0-3.egg|7e2fc1584bc91
 seatd|0.8.0-1|glibc|eggs/seatd-0.8.0-1.egg|bf374b8f9907bbe6765a5e63ca94b5c4535e333243ad28a9cb3549623716a9d6|46730|Seat manager: lets your apps use the screen and input safely (seatd)
 sideloader|1.0-3|glibc,usbmuxd,libimobiledevice,curl|eggs/sideloader-1.0-3.egg|ad8b8d71057b5f17f3015df8640a59e2f2c64af14d3b4987d28e500badaf921c|2148|Sideload iOS apps (.ipa) onto a device - the 'sideload' command (AltServer-Linux)
 sl|5.02-1||eggs/sl-5.02-1.egg|ef13e10b7d0e70747e6ec406f9a50cae61a6d47fd68c4a40fc1fb026a5f603d9|507887|A steam locomotive runs across your screen when you type sl instead of ls
+storage-grow|1.0-1||eggs/storage-grow-1.0-1.egg|7760756f8b9b221a13978b639e4bafc33acff6cf4c0f442fead384341fb76aef|609465|Give Waddle more room: grows its saved storage while it runs - the 'storage-grow' command (or Grow Storage in Apps)
 tree|2.2.1-1||eggs/tree-2.2.1-1.egg|0c1f03e441e769d14f20f947da503ba4cbced760e0d7bb6422d456cfe34e9b8d|513916|Show folders and files as a tree
 usbmuxd|1.1.1-1|glibc,libimobiledevice|eggs/usbmuxd-1.1.1-1.egg|4e456f9ab2750f86e79aca98ec8b782c0a9603bb73c92f7edf183c2ac42255a0|36246|USB multiplexer daemon for iPhones/iPads (run: sudo usbmuxd)
 waddle-desktop|1.0-39|glibc,wlroots,mesa,wayland,libxkbcommon,xkeyboard-config,libinput,pixman,seatd,dbus,glib|eggs/waddle-desktop-1.0-39.egg|f8247d2f39ae057424caf7edfeb1238af90a6fd0b36ff12de813907e2c315482|391312|Waddle Desktop with real windows for apps like Firefox
